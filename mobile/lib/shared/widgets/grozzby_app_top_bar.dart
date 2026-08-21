@@ -24,8 +24,10 @@ class GrozzbyAppTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Container(
-      color: AppColors.white,
+      color: isDark ? const Color(0xFF1E293B) : AppColors.white,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -55,14 +57,14 @@ class GrozzbyAppTopBar extends StatelessWidget {
                   location,
                   style: AppTextStyles.bodyMedium.copyWith(
                     fontWeight: FontWeight.w700,
-                    color: AppColors.neutral900,
+                    color: isDark ? Colors.white : AppColors.neutral900,
                     fontSize: 13,
                   ),
                 ),
                 const SizedBox(width: 4),
-                const Icon(
+                Icon(
                   Icons.keyboard_arrow_down_rounded,
-                  color: AppColors.neutral600,
+                  color: isDark ? const Color(0xFF94A3B8) : AppColors.neutral600,
                   size: 18,
                 ),
               ],
@@ -82,9 +84,9 @@ class GrozzbyAppTopBar extends StatelessWidget {
               child: Stack(
                 clipBehavior: Clip.none,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.shopping_bag_outlined,
-                    color: AppColors.neutral800,
+                    color: isDark ? Colors.white : AppColors.neutral800,
                     size: 24,
                   ),
                   if (cartCount > 0)

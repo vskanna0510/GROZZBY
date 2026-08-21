@@ -28,6 +28,8 @@ class QuickActionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -37,12 +39,15 @@ class QuickActionCard extends StatelessWidget {
           height: 138,
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: AppColors.white,
+            color: isDark ? const Color(0xFF1E293B) : AppColors.white,
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: AppColors.neutral200, width: 1),
+            border: Border.all(
+              color: isDark ? const Color(0xFF334155) : AppColors.neutral200,
+              width: 1,
+            ),
             boxShadow: [
               BoxShadow(
-                color: AppColors.black.withValues(alpha: 0.03),
+                color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.03),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
               ),
@@ -61,7 +66,7 @@ class QuickActionCard extends StatelessWidget {
                     width: 48,
                     height: 48,
                     decoration: BoxDecoration(
-                      color: iconBgColor,
+                      color: isDark ? iconColor.withValues(alpha: 0.15) : iconBgColor,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Center(
@@ -76,7 +81,7 @@ class QuickActionCard extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: badgeColor ?? iconBgColor,
+                        color: isDark ? iconColor.withValues(alpha: 0.2) : (badgeColor ?? iconBgColor),
                         borderRadius: BorderRadius.circular(999),
                       ),
                       child: Text(
@@ -100,14 +105,18 @@ class QuickActionCard extends StatelessWidget {
                     title,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTextStyles.quickActionTitle,
+                    style: AppTextStyles.quickActionTitle.copyWith(
+                      color: isDark ? Colors.white : AppColors.neutral900,
+                    ),
                   ),
                   const SizedBox(height: 3),
                   Text(
                     subtitle,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTextStyles.quickActionSubtitle,
+                    style: AppTextStyles.quickActionSubtitle.copyWith(
+                      color: isDark ? const Color(0xFF94A3B8) : AppColors.neutral500,
+                    ),
                   ),
                 ],
               ),

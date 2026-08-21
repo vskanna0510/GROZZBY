@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
 import 'app_text_styles.dart';
 
 abstract final class AppTheme {
+  static const _fontFamily = 'Inter';
+  static const _fontFallbacks = ['Inter', 'Poppins', 'Roboto', 'Segoe UI', 'sans-serif'];
+
   static ThemeData get light => getTheme(isDark: false);
   static ThemeData get dark => getTheme(isDark: true);
 
@@ -17,6 +19,8 @@ abstract final class AppTheme {
       return ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
+        fontFamily: _fontFamily,
+        fontFamilyFallback: _fontFallbacks,
         scaffoldBackgroundColor: scaffoldBg,
         cardColor: surfaceColor,
         colorScheme: ColorScheme.dark(
@@ -32,10 +36,11 @@ abstract final class AppTheme {
           elevation: 0,
           scrolledUnderElevation: 1,
           iconTheme: const IconThemeData(color: Colors.white),
-          titleTextStyle: GoogleFonts.inter(
+          titleTextStyle: const TextStyle(
             color: Colors.white,
             fontSize: 18,
             fontWeight: FontWeight.w700,
+            fontFamily: _fontFamily,
           ),
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
@@ -68,7 +73,7 @@ abstract final class AppTheme {
             borderSide: const BorderSide(color: Color(0xFF3B82F6), width: 2),
           ),
           contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-          hintStyle: GoogleFonts.inter(color: const Color(0xFF94A3B8), fontSize: 13),
+          hintStyle: const TextStyle(color: Color(0xFF94A3B8), fontSize: 13, fontFamily: _fontFamily),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
@@ -78,12 +83,9 @@ abstract final class AppTheme {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(14),
             ),
-            textStyle: GoogleFonts.inter(fontSize: 15, fontWeight: FontWeight.w700),
+            textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700, fontFamily: _fontFamily),
             elevation: 0,
           ),
-        ),
-        textTheme: GoogleFonts.interTextTheme(
-          ThemeData(brightness: Brightness.dark).textTheme,
         ),
       );
     } else {
@@ -94,6 +96,8 @@ abstract final class AppTheme {
       return ThemeData(
         useMaterial3: true,
         brightness: Brightness.light,
+        fontFamily: _fontFamily,
+        fontFamilyFallback: _fontFallbacks,
         scaffoldBackgroundColor: scaffoldBg,
         cardColor: surfaceColor,
         colorScheme: ColorScheme.light(
@@ -109,10 +113,11 @@ abstract final class AppTheme {
           elevation: 0,
           scrolledUnderElevation: 1,
           iconTheme: const IconThemeData(color: AppColors.neutral900),
-          titleTextStyle: GoogleFonts.inter(
+          titleTextStyle: const TextStyle(
             color: AppColors.neutral900,
             fontSize: 18,
             fontWeight: FontWeight.w700,
+            fontFamily: _fontFamily,
           ),
           systemOverlayStyle: SystemUiOverlayStyle.dark,
         ),
@@ -158,9 +163,6 @@ abstract final class AppTheme {
             textStyle: AppTextStyles.bodySemiBold16,
             elevation: 0,
           ),
-        ),
-        textTheme: GoogleFonts.interTextTheme(
-          ThemeData(brightness: Brightness.light).textTheme,
         ),
       );
     }

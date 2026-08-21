@@ -46,21 +46,22 @@ class GrozzbyBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cartCount = context.watch<CartProvider>().totalItemCount;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Container(
-      decoration: const BoxDecoration(
-        color: Color(0xFFFBFBFB),
+      decoration: BoxDecoration(
+        color: isDark ? const Color(0xFF1E293B) : const Color(0xFFFBFBFB),
         border: Border(
           top: BorderSide(
-            color: Color(0xFFE5E7EB),
+            color: isDark ? const Color(0xFF334155) : const Color(0xFFE5E7EB),
             width: 1.0,
           ),
         ),
         boxShadow: [
           BoxShadow(
-            color: Color.fromRGBO(0, 0, 0, 0.04),
+            color: Colors.black.withValues(alpha: isDark ? 0.25 : 0.04),
             blurRadius: 10,
-            offset: Offset(0, -2),
+            offset: const Offset(0, -2),
           ),
         ],
       ),
@@ -136,8 +137,9 @@ class _NavTabItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final activeColor = const Color(0xFF191C1D);
-    final inactiveColor = const Color(0xFF4B5563);
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final activeColor = isDark ? Colors.white : const Color(0xFF191C1D);
+    final inactiveColor = isDark ? const Color(0xFF94A3B8) : const Color(0xFF4B5563);
     final color = isSelected ? activeColor : inactiveColor;
 
     return Expanded(
