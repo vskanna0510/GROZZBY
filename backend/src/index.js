@@ -10,6 +10,18 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({
+    name: 'Grozzby REST API',
+    status: 'online',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      auth: '/api/auth',
+    },
+  });
+});
+
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'grozzby-api' });
 });
