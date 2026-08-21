@@ -44,10 +44,25 @@ class _CategoryCatalogScreenState extends State<CategoryCatalogScreen> {
     'Price: High-Low',
   ];
 
+  String _resolveCategoryId(String? id) {
+    if (id == null || id.isEmpty) return ShopData.categories.first.id;
+    final normalized = id.toLowerCase().trim();
+    final match = ShopData.categories.firstWhere(
+      (c) =>
+          c.id == id ||
+          c.id.toLowerCase() == normalized ||
+          c.id == 'cat_$normalized' ||
+          c.name.toLowerCase() == normalized ||
+          c.name.toLowerCase().contains(normalized),
+      orElse: () => ShopData.categories.first,
+    );
+    return match.id;
+  }
+
   @override
   void initState() {
     super.initState();
-    _selectedCategoryId = widget.initialCategoryId ?? ShopData.categories.first.id;
+    _selectedCategoryId = _resolveCategoryId(widget.initialCategoryId);
   }
 
   @override
@@ -55,7 +70,7 @@ class _CategoryCatalogScreenState extends State<CategoryCatalogScreen> {
     super.didUpdateWidget(oldWidget);
     if (widget.initialCategoryId != null && widget.initialCategoryId != oldWidget.initialCategoryId) {
       setState(() {
-        _selectedCategoryId = widget.initialCategoryId!;
+        _selectedCategoryId = _resolveCategoryId(widget.initialCategoryId);
       });
     }
   }

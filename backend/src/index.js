@@ -2,6 +2,9 @@ import cors from 'cors';
 import express from 'express';
 import { env } from './config/env.js';
 import authRoutes from './routes/auth.routes.js';
+import shopRoutes from './routes/shop.routes.js';
+import orderRoutes from './routes/order.routes.js';
+import userRoutes from './routes/user.routes.js';
 import { errorMiddleware } from './middleware/error.middleware.js';
 import { runMigrations } from './db/migrate.js';
 
@@ -18,6 +21,11 @@ app.get('/', (req, res) => {
     endpoints: {
       health: '/health',
       auth: '/api/auth',
+      categories: '/api/categories',
+      products: '/api/products',
+      stores: '/api/stores',
+      orders: '/api/orders',
+      user: '/api/user',
     },
   });
 });
@@ -27,6 +35,9 @@ app.get('/health', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api', shopRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/user', userRoutes);
 
 app.use(errorMiddleware);
 
