@@ -265,11 +265,13 @@ class _PaymentSecurityScreenState extends State<PaymentSecurityScreen> {
             // Section 3: Security Switches
             Text('Security Controls', style: AppTextStyles.accountSectionTitle),
             const SizedBox(height: 12),
-            Container(
-              decoration: BoxDecoration(
-                color: AppColors.white,
+            Material(
+              color: AppColors.white,
+              borderRadius: BorderRadius.circular(16),
+              clipBehavior: Clip.antiAlias,
+              shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: AppColors.neutral200),
+                side: const BorderSide(color: AppColors.neutral200),
               ),
               child: Column(
                 children: [

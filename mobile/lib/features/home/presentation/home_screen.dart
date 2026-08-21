@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     _bannerTimer = Timer.periodic(const Duration(seconds: 4), (timer) {
-      if (_bannerController.hasClients) {
+      if (mounted && _bannerController.hasClients) {
         final nextPage = (_currentBannerPage + 1) % _banners.length;
         _bannerController.animateToPage(
           nextPage,

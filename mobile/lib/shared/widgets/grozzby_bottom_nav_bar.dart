@@ -50,17 +50,17 @@ class GrozzbyBottomNavBar extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1E293B) : const Color(0xFFFBFBFB),
+        color: isDark ? const Color(0xFF0F172A) : Colors.white,
         border: Border(
           top: BorderSide(
-            color: isDark ? const Color(0xFF334155) : const Color(0xFFE5E7EB),
+            color: isDark ? const Color(0xFF1E293B) : const Color(0xFFF1F5F9),
             width: 1.0,
           ),
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: isDark ? 0.25 : 0.04),
-            blurRadius: 10,
+            color: Colors.black.withValues(alpha: isDark ? 0.25 : 0.03),
+            blurRadius: 8,
             offset: const Offset(0, -2),
           ),
         ],
@@ -138,8 +138,12 @@ class _NavTabItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final activeColor = isDark ? Colors.white : const Color(0xFF191C1D);
-    final inactiveColor = isDark ? const Color(0xFF94A3B8) : const Color(0xFF4B5563);
+    const activeColor = Color(0xFF2563EB); // Figma vibrant royal blue
+    final inactiveColor = isDark ? const Color(0xFF94A3B8) : const Color(0xFF334155);
+    final activeBgColor = isDark
+        ? const Color(0xFF2563EB).withValues(alpha: 0.18)
+        : const Color(0xFFEFF6FF); // Soft blue pill container
+
     final color = isSelected ? activeColor : inactiveColor;
 
     return Expanded(
@@ -147,67 +151,83 @@ class _NavTabItem extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           onTap: onTap,
-          splashColor: const Color(0xFF00288E).withValues(alpha: 0.06),
+          borderRadius: BorderRadius.circular(16),
+          splashColor: const Color(0xFF2563EB).withValues(alpha: 0.08),
           highlightColor: Colors.transparent,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Stack(
-                clipBehavior: Clip.none,
-                alignment: Alignment.center,
+          child: Center(
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              curve: Curves.easeInOut,
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 5),
+              decoration: BoxDecoration(
+                color: isSelected ? activeBgColor : Colors.transparent,
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    width: 28,
-                    height: 28,
-                    child: Center(
-                      child: CustomPaint(
-                        size: const Size(24, 24),
-                        painter: _NavIconCustomPainter(
-                          type: iconType,
-                          color: color,
-                          strokeWidth: isSelected ? 2.2 : 1.9,
-                        ),
-                      ),
-                    ),
-                  ),
-                  if (badgeCount > 0)
-                    Positioned(
-                      top: -3,
-                      right: -6,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 4.5, vertical: 1.5),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF00288E),
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Colors.white, width: 1.5),
-                        ),
-                        constraints: const BoxConstraints(minWidth: 16, minHeight: 16),
-                        child: Text(
-                          badgeCount > 99 ? '99+' : badgeCount.toString(),
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontSize: 9,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white,
-                            fontFamily: 'Inter',
+                  Stack(
+                    clipBehavior: Clip.none,
+                    alignment: Alignment.center,
+                    children: [
+                      SizedBox(
+                        width: 24,
+                        height: 24,
+                        child: Center(
+                          child: CustomPaint(
+                            size: const Size(22, 22),
+                            painter: _NavIconCustomPainter(
+                              type: iconType,
+                              color: color,
+                              strokeWidth: isSelected ? 2.2 : 1.8,
+                            ),
                           ),
                         ),
                       ),
+                      if (badgeCount > 0)
+                        Positioned(
+                          top: -4,
+                          right: -8,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFF2563EB),
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: isDark ? const Color(0xFF0F172A) : Colors.white,
+                                width: 1.5,
+                              ),
+                            ),
+                            constraints: const BoxConstraints(minWidth: 15, minHeight: 15),
+                            child: Text(
+                              badgeCount > 99 ? '99+' : badgeCount.toString(),
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 8.5,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white,
+                                fontFamily: 'Inter',
+                              ),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 3),
+                  Text(
+                    label,
+                    style: TextStyle(
+                      fontFamily: 'Inter',
+                      fontSize: 11.5,
+                      fontWeight: isSelected ? FontWeight.w700 : FontWeight.w600,
+                      color: color,
+                      letterSpacing: -0.1,
                     ),
+                  ),
                 ],
               ),
-              const SizedBox(height: 4),
-              Text(
-                label,
-                style: TextStyle(
-                  fontFamily: 'Inter',
-                  fontSize: 11.5,
-                  fontWeight: isSelected ? FontWeight.w800 : FontWeight.w700,
-                  color: color,
-                  letterSpacing: -0.1,
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
