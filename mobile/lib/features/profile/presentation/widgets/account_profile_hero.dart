@@ -109,7 +109,11 @@ class AccountProfileHero extends StatelessWidget {
                                     fit: BoxFit.cover,
                                     errorBuilder: (_, __, ___) => _buildAvatarFallback(),
                                   )
-                                : _buildAvatarFallback(),
+                                : Image.asset(
+                                    'assets/images/user_avatar.png',
+                                    fit: BoxFit.cover,
+                                    errorBuilder: (_, __, ___) => _buildAvatarFallback(),
+                                  ),
                           ),
                         ),
 
