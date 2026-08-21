@@ -52,6 +52,39 @@ abstract final class AppColors {
   static const ringOverlay = Color(0x4DFFFFFF);
   static const subtitleWhite = Color(0xB3FFFFFF);
 
+  // Account Profile Hero Gradients
+  static const heroGradientStart = Color(0xFF0A2540);
+  static const heroGradientMid = Color(0xFF1778BD);
+  static const heroGradientEnd = Color(0xFF004678);
+
+  // Quick Action Semantics
+  static const actionOrdersBg = Color(0xFFEFF6FF);
+  static const actionOrdersIcon = Color(0xFF2563EB);
+  static const actionWishlistBg = Color(0xFFFFF1F2);
+  static const actionWishlistIcon = Color(0xFFF43F5E);
+  static const actionAddressBg = Color(0xFFECFDF5);
+  static const actionAddressIcon = Color(0xFF10B981);
+  static const actionPaymentBg = Color(0xFFFFFBEB);
+  static const actionPaymentIcon = Color(0xFFF59E0B);
+
+  // Settings Row Icon Box Tints
+  static const settingOrangeBg = Color(0xFFFFF7ED);
+  static const settingOrange = Color(0xFFEA580C);
+  static const settingIndigoBg = Color(0xFFEEF2FF);
+  static const settingIndigo = Color(0xFF4F46E5);
+  static const settingEmeraldBg = Color(0xFFECFDF5);
+  static const settingEmerald = Color(0xFF059669);
+  static const settingCyanBg = Color(0xFFECFEFF);
+  static const settingCyan = Color(0xFF0891B2);
+  static const settingVioletBg = Color(0xFFF5F3FF);
+  static const settingViolet = Color(0xFF7C3AED);
+  static const settingSlateBg = Color(0xFFF1F5F9);
+  static const settingSlate = Color(0xFF475569);
+  static const settingSkyBg = Color(0xFFF0F9FF);
+  static const settingSky = Color(0xFF0284C7);
+  static const settingBlueBg = Color(0xFFEFF6FF);
+  static const settingBlue = Color(0xFF2563EB);
+
   // Category tint backgrounds
   static const categoryBg1 = Color(0xFFFEF2F2);
   static const categoryBg2 = Color(0xFFEFF6FF);

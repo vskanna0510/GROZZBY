@@ -241,5 +241,51 @@ abstract final class AppTextStyles {
         fontWeight: FontWeight.w700,
         color: AppColors.white,
       );
+
+  // Account Page Specific Typography
+  static TextStyle get accountHeroName => GoogleFonts.inter(
+        fontSize: 26,
+        fontWeight: FontWeight.w800,
+        letterSpacing: -0.5,
+        color: AppColors.white,
+      );
+
+  static TextStyle get accountHeroButton => GoogleFonts.inter(
+        fontSize: 13,
+        fontWeight: FontWeight.w600,
+        color: AppColors.white,
+      );
+
+  static TextStyle get accountSectionTitle => GoogleFonts.inter(
+        fontSize: 18,
+        fontWeight: FontWeight.w700,
+        letterSpacing: -0.2,
+        color: AppColors.neutral900,
+      );
+
+  static TextStyle get quickActionTitle => GoogleFonts.inter(
+        fontSize: 15,
+        fontWeight: FontWeight.w700,
+        color: AppColors.neutral900,
+      );
+
+  static TextStyle get quickActionSubtitle => GoogleFonts.inter(
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+        color: AppColors.neutral500,
+      );
+
+  static TextStyle get settingRowTitle => GoogleFonts.inter(
+        fontSize: 14,
+        fontWeight: FontWeight.w600,
+        color: AppColors.neutral900,
+      );
+
+  static TextStyle get settingRowSubtitle => GoogleFonts.inter(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        height: 1.3,
+        color: AppColors.neutral500,
+      );
 }
 

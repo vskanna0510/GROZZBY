@@ -7,12 +7,18 @@ import 'grozzby_logo.dart';
 class GrozzbyAppTopBar extends StatelessWidget {
   final String location;
   final int notificationCount;
+  final int cartCount;
+  final bool showCart;
+  final Widget? trailingWidget;
   final VoidCallback? onLocationTap;
 
   const GrozzbyAppTopBar({
     super.key,
     this.location = 'New York, 10001',
     this.notificationCount = 2,
+    this.cartCount = 0,
+    this.showCart = false,
+    this.trailingWidget,
     this.onLocationTap,
   });
 
@@ -66,47 +72,91 @@ class GrozzbyAppTopBar extends StatelessWidget {
           // 2. Grozzby Logo (Brand Mark)
           const GrozzbyLogo(height: 24),
 
-          // 3. Notification Bell Icon with Orange Badge
-          InkWell(
-            onTap: () => context.push('/notifications'),
-            borderRadius: BorderRadius.circular(20),
-            child: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                const Icon(
-                  Icons.notifications_none_rounded,
-                  color: AppColors.neutral800,
-                  size: 24,
-                ),
-                if (notificationCount > 0)
-                  Positioned(
-                    top: -4,
-                    right: -4,
-                    child: Container(
-                      padding: const EdgeInsets.all(3.5),
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFEA580C), // Orange-600
-                        shape: BoxShape.circle,
-                      ),
-                      constraints: const BoxConstraints(
-                        minWidth: 16,
-                        minHeight: 16,
-                      ),
-                      child: Text(
-                        '$notificationCount',
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          color: AppColors.white,
-                          fontSize: 9,
-                          fontWeight: FontWeight.w800,
-                          height: 1.0,
+          // 3. Right Action: Custom / Cart / Notification Bell
+          if (trailingWidget != null)
+            trailingWidget!
+          else if (showCart)
+            InkWell(
+              onTap: () => context.push('/cart'),
+              borderRadius: BorderRadius.circular(20),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  const Icon(
+                    Icons.shopping_bag_outlined,
+                    color: AppColors.neutral800,
+                    size: 24,
+                  ),
+                  if (cartCount > 0)
+                    Positioned(
+                      top: -4,
+                      right: -4,
+                      child: Container(
+                        padding: const EdgeInsets.all(3.5),
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFEA580C), // Orange-600
+                          shape: BoxShape.circle,
+                        ),
+                        constraints: const BoxConstraints(
+                          minWidth: 16,
+                          minHeight: 16,
+                        ),
+                        child: Text(
+                          '$cartCount',
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            color: AppColors.white,
+                            fontSize: 9,
+                            fontWeight: FontWeight.w800,
+                            height: 1.0,
+                          ),
                         ),
                       ),
                     ),
+                ],
+              ),
+            )
+          else
+            InkWell(
+              onTap: () => context.push('/notifications'),
+              borderRadius: BorderRadius.circular(20),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  const Icon(
+                    Icons.notifications_none_rounded,
+                    color: AppColors.neutral800,
+                    size: 24,
                   ),
-              ],
+                  if (notificationCount > 0)
+                    Positioned(
+                      top: -4,
+                      right: -4,
+                      child: Container(
+                        padding: const EdgeInsets.all(3.5),
+                        decoration: const BoxDecoration(
+                          color: Color(0xFFEA580C), // Orange-600
+                          shape: BoxShape.circle,
+                        ),
+                        constraints: const BoxConstraints(
+                          minWidth: 16,
+                          minHeight: 16,
+                        ),
+                        child: Text(
+                          '$notificationCount',
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            color: AppColors.white,
+                            fontSize: 9,
+                            fontWeight: FontWeight.w800,
+                            height: 1.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
             ),
-          ),
         ],
       ),
     );

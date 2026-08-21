@@ -33,6 +33,11 @@ import '../../features/wishlist/presentation/wishlist_screen.dart';
 import '../../features/notifications/presentation/notifications_screen.dart';
 import '../../features/profile/presentation/faq_details_screen.dart';
 import '../../features/profile/presentation/notification_preferences_screen.dart';
+import '../../features/profile/presentation/edit_profile_screen.dart';
+import '../../features/profile/presentation/payment_security_screen.dart';
+import '../../features/profile/presentation/switch_account_screen.dart';
+import '../../features/profile/presentation/theme_appearance_screen.dart';
+import '../../features/profile/presentation/account_security_screen.dart';
 import '../../features/stores/presentation/store_locator_screen.dart';
 import '../../features/stores/presentation/store_details_screen.dart';
 import '../../features/support/presentation/live_chat_screen.dart';
@@ -302,6 +307,26 @@ GoRouter createAppRouter({
       GoRoute(
         path: '/notifications/preferences',
         builder: (context, state) => const NotificationPreferencesScreen(),
+      ),
+      GoRoute(
+        path: '/profile/edit',
+        builder: (context, state) => const EditProfileScreen(),
+      ),
+      GoRoute(
+        path: '/profile/payments',
+        builder: (context, state) => const PaymentSecurityScreen(),
+      ),
+      GoRoute(
+        path: '/profile/switch-account',
+        builder: (context, state) => const SwitchAccountScreen(),
+      ),
+      GoRoute(
+        path: '/profile/theme',
+        builder: (context, state) => const ThemeAppearanceScreen(),
+      ),
+      GoRoute(
+        path: '/profile/security-verification',
+        builder: (context, state) => const AccountSecurityScreen(),
       ),
     ],
   );
