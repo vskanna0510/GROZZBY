@@ -38,6 +38,7 @@ import '../../features/profile/presentation/payment_security_screen.dart';
 import '../../features/profile/presentation/switch_account_screen.dart';
 import '../../features/profile/presentation/theme_appearance_screen.dart';
 import '../../features/profile/presentation/account_security_screen.dart';
+import '../../features/categories/presentation/category_catalog_screen.dart';
 import '../../features/stores/presentation/store_locator_screen.dart';
 import '../../features/stores/presentation/store_details_screen.dart';
 import '../../features/support/presentation/live_chat_screen.dart';
@@ -93,6 +94,13 @@ GoRouter createAppRouter({
       GoRoute(
         path: '/categories',
         builder: (context, state) => const MainShellScreen(initialIndex: 1),
+      ),
+      GoRoute(
+        path: '/categories/catalog',
+        builder: (context, state) {
+          final categoryId = state.uri.queryParameters['id'] ?? (state.extra as String?);
+          return CategoryCatalogScreen(initialCategoryId: categoryId);
+        },
       ),
       GoRoute(
         path: '/search',

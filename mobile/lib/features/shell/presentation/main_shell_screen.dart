@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../shared/widgets/grozzby_bottom_nav_bar.dart';
-import '../../categories/presentation/category_catalog_screen.dart';
+import '../../categories/presentation/browse_categories_screen.dart';
 import '../../cart/presentation/cart_screen.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../profile/presentation/profile_screen.dart';
@@ -47,7 +47,7 @@ class _MainShellScreenState extends State<MainShellScreen> {
   Widget build(BuildContext context) {
     final screens = [
       HomeScreen(onTabChange: _onTabChanged),
-      const CategoryCatalogScreen(),
+      const BrowseCategoriesScreen(),
       const SearchScreen(),
       CartScreen(onExplore: () => _onTabChanged(0)),
       const ProfileScreen(),
