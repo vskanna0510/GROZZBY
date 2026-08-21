@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../shared/widgets/grozzby_app_top_bar.dart';
+import '../../../shared/widgets/grozzby_bottom_nav_bar.dart';
 import '../../../shared/widgets/product_card.dart';
 import '../../shop/data/shop_data.dart';
 import '../../shop/models/product.dart';
 
 class CategoryCatalogScreen extends StatefulWidget {
   final String? initialCategoryId;
+  final bool showBottomNav;
 
   const CategoryCatalogScreen({
     super.key,
     this.initialCategoryId,
+    this.showBottomNav = true,
   });
 
   @override
@@ -381,8 +385,34 @@ class _CategoryCatalogScreenState extends State<CategoryCatalogScreen> {
       }
     }
 
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFC),
+      backgroundColor: isDark ? const Color(0xFF0B1120) : const Color(0xFFF8FAFC),
+      bottomNavigationBar: widget.showBottomNav
+          ? GrozzbyBottomNavBar(
+              currentIndex: 1,
+              onTap: (index) {
+                switch (index) {
+                  case 0:
+                    context.go('/home');
+                    break;
+                  case 1:
+                    context.go('/categories');
+                    break;
+                  case 2:
+                    context.go('/search');
+                    break;
+                  case 3:
+                    context.go('/cart');
+                    break;
+                  case 4:
+                    context.go('/profile');
+                    break;
+                }
+              },
+            )
+          : null,
       body: SafeArea(
         child: Column(
           children: [
