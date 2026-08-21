@@ -79,7 +79,7 @@ class InvoiceTable extends StatelessWidget {
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: order.items.length,
-            separatorBuilder: (_, _) => const Divider(height: 1, color: AppColors.neutral200),
+            separatorBuilder: (_, __) => const Divider(height: 1, color: AppColors.neutral200),
             itemBuilder: (context, index) {
               final item = order.items[index];
 

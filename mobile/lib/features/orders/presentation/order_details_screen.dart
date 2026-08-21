@@ -268,7 +268,7 @@ class OrderDetailsScreen extends StatelessWidget {
                             shrinkWrap: true,
                             physics: const NeverScrollableScrollPhysics(),
                             itemCount: activeOrder.items.length,
-                            separatorBuilder: (_, _) => const Divider(height: 20, color: Color(0xFFF1F5F9)),
+                            separatorBuilder: (_, __) => const Divider(height: 20, color: Color(0xFFF1F5F9)),
                             itemBuilder: (context, index) {
                               final item = activeOrder.items[index];
 
@@ -288,7 +288,7 @@ class OrderDetailsScreen extends StatelessWidget {
                                         child: Image.network(
                                           item.product.imageUrl,
                                           fit: BoxFit.cover,
-                                          errorBuilder: (_, _, _) => const Center(
+                                          errorBuilder: (context, error, stackTrace) => const Center(
                                             child: Icon(Icons.shopping_bag_outlined, color: Color(0xFF2563EB)),
                                           ),
                                         ),

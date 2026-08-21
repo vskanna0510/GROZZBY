@@ -140,7 +140,7 @@ class OrderCard extends StatelessWidget {
                       child: Image.network(
                         firstItem.product.imageUrl,
                         fit: BoxFit.cover,
-                        errorBuilder: (_, _, _) => const Center(
+                        errorBuilder: (context, error, stackTrace) => const Center(
                           child: Icon(Icons.shopping_bag_outlined, color: AppColors.primary),
                         ),
                       ),

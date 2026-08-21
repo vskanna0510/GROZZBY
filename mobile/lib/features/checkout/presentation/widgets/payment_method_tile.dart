@@ -98,7 +98,7 @@ class PaymentMethodTile extends StatelessWidget {
                 ),
 
                 // Trailing if any
-                ?trailing,
+                if (trailing != null) trailing!,
               ],
             ),
             if (isSelected && extraContent != null) ...[

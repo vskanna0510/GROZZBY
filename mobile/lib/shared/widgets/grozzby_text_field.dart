@@ -52,7 +52,7 @@ class GrozzbyTextField extends StatelessWidget {
               ),
             ),
           ),
-          ?trailing,
+          if (trailing != null) trailing!,
         ],
       ),
     );
