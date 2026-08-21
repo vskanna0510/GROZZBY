@@ -21,6 +21,22 @@ class AuthUser {
     );
   }
 
+  AuthUser copyWith({
+    int? id,
+    String? name,
+    String? email,
+    String? phone,
+    bool? isVerified,
+  }) {
+    return AuthUser(
+      id: id ?? this.id,
+      name: name ?? this.name,
+      email: email ?? this.email,
+      phone: phone ?? this.phone,
+      isVerified: isVerified ?? this.isVerified,
+    );
+  }
+
   final int id;
   final String name;
   final String? email;
