@@ -12,6 +12,8 @@ import 'features/wishlist/data/wishlist_provider.dart';
 import 'features/orders/data/orders_provider.dart';
 import 'features/profile/data/addresses_provider.dart';
 
+import 'core/theme/theme_provider.dart';
+
 class GrozzbyApp extends StatelessWidget {
   const GrozzbyApp({
     super.key,
@@ -22,10 +24,20 @@ class GrozzbyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = context.watch<ThemeProvider>();
+
     return MaterialApp.router(
       title: 'Grozzby',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.light,
+      theme: AppTheme.getTheme(
+        isDark: false,
+        highContrast: themeProvider.highContrast,
+      ),
+      darkTheme: AppTheme.getTheme(
+        isDark: true,
+        highContrast: themeProvider.highContrast,
+      ),
+      themeMode: themeProvider.themeMode,
       routerConfig: router,
     );
   }
@@ -36,6 +48,8 @@ Future<void> bootstrap() async {
   final prefs = await SharedPreferences.getInstance();
   final session = AppSession(prefs);
   final authRepository = AuthRepository();
+  final themeProvider = ThemeProvider();
+  await themeProvider.init(prefs);
 
   runApp(
     MultiProvider(
@@ -45,6 +59,7 @@ Future<void> bootstrap() async {
         ChangeNotifierProvider(create: (_) => WishlistProvider()),
         ChangeNotifierProvider(create: (_) => OrdersProvider()),
         ChangeNotifierProvider(create: (_) => AddressesProvider()),
+        ChangeNotifierProvider.value(value: themeProvider),
       ],
       child: GrozzbyApp(
         router: createAppRouter(

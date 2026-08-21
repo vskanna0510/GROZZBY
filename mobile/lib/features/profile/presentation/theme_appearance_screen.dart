@@ -1,196 +1,614 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_text_styles.dart';
+import '../../../core/theme/theme_provider.dart';
 
-class ThemeAppearanceScreen extends StatefulWidget {
+class ThemeAppearanceScreen extends StatelessWidget {
   const ThemeAppearanceScreen({super.key});
 
   @override
-  State<ThemeAppearanceScreen> createState() => _ThemeAppearanceScreenState();
-}
-
-class _ThemeAppearanceScreenState extends State<ThemeAppearanceScreen> {
-  String _selectedTheme = 'system'; // 'system', 'light', 'dark'
-  int _selectedColorIndex = 0;
-  bool _highContrast = false;
-  bool _reduceMotion = false;
-  bool _compactDensity = false;
-
-  final List<Color> _accentColors = const [
-    Color(0xFF1778BD), // Grozzby Blue
-    Color(0xFF059669), // Emerald
-    Color(0xFF7C3AED), // Violet
-    Color(0xFFEA580C), // Orange
-    Color(0xFFE11D48), // Rose
-  ];
-
-  @override
   Widget build(BuildContext context) {
+    final themeProvider = context.watch<ThemeProvider>();
+    final isDark = themeProvider.isDarkMode(context);
+
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: isDark ? const Color(0xFF0B1120) : const Color(0xFFF8FAFC),
       appBar: AppBar(
-        backgroundColor: AppColors.white,
+        backgroundColor: isDark ? const Color(0xFF1E293B) : Colors.white,
         elevation: 0,
         scrolledUnderElevation: 1,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded, color: AppColors.neutral900),
+          icon: Icon(
+            Icons.arrow_back_rounded,
+            color: isDark ? Colors.white : AppColors.neutral900,
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
-          'Theme & Appearance',
-          style: AppTextStyles.headingBold18.copyWith(color: AppColors.neutral900),
+          'Theme',
+          style: AppTextStyles.headingBold18.copyWith(
+            color: isDark ? Colors.white : AppColors.neutral900,
+            fontWeight: FontWeight.w800,
+          ),
         ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Section 1: Mode Selector
-            Text('Appearance Mode', style: AppTextStyles.accountSectionTitle),
-            const SizedBox(height: 14),
-            Row(
-              children: [
-                _buildThemeCard(
-                  id: 'system',
-                  title: 'System',
-                  icon: Icons.phone_android_rounded,
-                  previewColor: const Color(0xFFE2E8F0),
-                ),
-                const SizedBox(width: 12),
-                _buildThemeCard(
-                  id: 'light',
-                  title: 'Light',
-                  icon: Icons.light_mode_rounded,
-                  previewColor: Colors.white,
-                ),
-                const SizedBox(width: 12),
-                _buildThemeCard(
-                  id: 'dark',
-                  title: 'Dark',
-                  icon: Icons.dark_mode_rounded,
-                  previewColor: const Color(0xFF0F172A),
-                ),
-              ],
-            ),
-
-            const SizedBox(height: 28),
-
-            // Section 2: Accent Palette
-            Text('Accent Color', style: AppTextStyles.accountSectionTitle),
-            const SizedBox(height: 6),
+            // 1. SECTION: APPEARANCE
             Text(
-              'Customize buttons, badges, and active highlights.',
-              style: AppTextStyles.caption,
+              'Appearance',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+                color: isDark ? Colors.white : const Color(0xFF0F172A),
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              'Choose how Grozzy looks on your device. Your choice will sync across all corporate workspace sessions.',
+              style: TextStyle(
+                fontSize: 12.5,
+                fontWeight: FontWeight.w400,
+                color: isDark ? const Color(0xFF94A3B8) : const Color(0xFF64748B),
+                height: 1.35,
+              ),
+            ),
+            const SizedBox(height: 16),
+
+            // Card 1: Light Mode
+            _buildThemeOptionCard(
+              context: context,
+              title: 'Light Mode',
+              subtitle: 'High clarity, traditional workspace',
+              isSelected: themeProvider.appThemeMode == AppThemeMode.light,
+              onTap: () => themeProvider.setThemeMode(AppThemeMode.light),
+              previewWidget: _buildLightPreview(),
+              isDarkSurface: isDark,
             ),
             const SizedBox(height: 14),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              decoration: BoxDecoration(
-                color: AppColors.white,
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: AppColors.neutral200),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: List.generate(_accentColors.length, (index) {
-                  final color = _accentColors[index];
-                  final isSelected = _selectedColorIndex == index;
 
-                  return GestureDetector(
-                    onTap: () {
-                      setState(() => _selectedColorIndex = index);
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Theme accent updated'), duration: Duration(milliseconds: 800)),
-                      );
-                    },
-                    child: Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: color,
-                        shape: BoxShape.circle,
-                        border: isSelected ? Border.all(color: AppColors.neutral900, width: 3) : null,
-                        boxShadow: [
-                          BoxShadow(
-                            color: color.withValues(alpha: 0.35),
-                            blurRadius: 8,
-                            offset: const Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                      child: isSelected
-                          ? const Center(child: Icon(Icons.check_rounded, color: Colors.white, size: 22))
-                          : null,
-                    ),
-                  );
-                }),
-              ),
+            // Card 2: Dark Mode
+            _buildThemeOptionCard(
+              context: context,
+              title: 'Dark Mode',
+              subtitle: 'Focus-oriented, low-light optimized',
+              isSelected: themeProvider.appThemeMode == AppThemeMode.dark,
+              onTap: () => themeProvider.setThemeMode(AppThemeMode.dark),
+              previewWidget: _buildDarkPreview(),
+              isDarkSurface: isDark,
+            ),
+            const SizedBox(height: 14),
+
+            // Card 3: System Default
+            _buildThemeOptionCard(
+              context: context,
+              title: 'System Default',
+              subtitle: 'Follows device operating settings',
+              isSelected: themeProvider.appThemeMode == AppThemeMode.system,
+              onTap: () => themeProvider.setThemeMode(AppThemeMode.system),
+              previewWidget: _buildSystemPreview(),
+              isDarkSurface: isDark,
             ),
 
             const SizedBox(height: 28),
 
-            // Section 3: Accessibility & Visual Toggles
-            Text('Accessibility & Motion', style: AppTextStyles.accountSectionTitle),
+            // 2. SECTION: DISPLAY SETTINGS
+            Text(
+              'Display Settings',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w800,
+                color: isDark ? Colors.white : const Color(0xFF0F172A),
+              ),
+            ),
             const SizedBox(height: 14),
+
             Container(
               decoration: BoxDecoration(
-                color: AppColors.white,
+                color: isDark ? const Color(0xFF1E293B) : Colors.white,
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: AppColors.neutral200),
+                border: Border.all(
+                  color: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.02),
+                    blurRadius: 8,
+                    offset: const Offset(0, 3),
+                  ),
+                ],
               ),
               child: Column(
                 children: [
-                  SwitchListTile(
-                    value: _highContrast,
-                    onChanged: (val) => setState(() => _highContrast = val),
-                    activeTrackColor: AppColors.primary,
-                    title: Text('High Contrast', style: AppTextStyles.bodySemiBold14),
-                    subtitle: Text('Increase text and border clarity', style: AppTextStyles.caption),
-                    secondary: Container(
-                      padding: const EdgeInsets.all(8),
+                  // High Contrast Mode
+                  _buildSettingRow(
+                    isDark: isDark,
+                    iconWidget: Container(
+                      width: 38,
+                      height: 38,
                       decoration: BoxDecoration(
-                        color: AppColors.settingIndigoBg,
+                        color: isDark ? const Color(0xFF334155) : const Color(0xFFEFF6FF),
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Icon(Icons.contrast_rounded, color: AppColors.settingIndigo, size: 20),
+                      child: Icon(
+                        Icons.contrast_rounded,
+                        color: isDark ? const Color(0xFF60A5FA) : const Color(0xFF1E293B),
+                        size: 20,
+                      ),
+                    ),
+                    title: 'High Contrast Mode',
+                    subtitle: 'Increase accessibility and visibility',
+                    value: themeProvider.highContrast,
+                    onChanged: (val) => themeProvider.setHighContrast(val),
+                  ),
+                  Divider(
+                    height: 1,
+                    indent: 68,
+                    endIndent: 16,
+                    color: isDark ? const Color(0xFF334155) : const Color(0xFFF1F5F9),
+                  ),
+
+                  // Dynamic Font Size
+                  _buildSettingRow(
+                    isDark: isDark,
+                    iconWidget: Container(
+                      width: 38,
+                      height: 38,
+                      decoration: BoxDecoration(
+                        color: isDark ? const Color(0xFF334155) : const Color(0xFFEFF6FF),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'A+',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w900,
+                            color: isDark ? const Color(0xFF60A5FA) : const Color(0xFF1E293B),
+                          ),
+                        ),
+                      ),
+                    ),
+                    title: 'Dynamic Font Size',
+                    subtitle: 'Adjust font scaling based on device',
+                    value: themeProvider.dynamicFontSize,
+                    onChanged: (val) => themeProvider.setDynamicFontSize(val),
+                  ),
+                ],
+              ),
+            ),
+
+            const SizedBox(height: 24),
+
+            // 3. SECTION: CUSTOM BRAND THEMES BANNER
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 22),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(18),
+                gradient: const LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color(0xFF002F87),
+                    Color(0xFF001F5C),
+                  ],
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFF002F87).withValues(alpha: 0.35),
+                    blurRadius: 14,
+                    offset: const Offset(0, 6),
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  const Text(
+                    'Custom Brand Themes',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white,
                     ),
                   ),
-                  const Divider(height: 1, indent: 68, color: AppColors.neutral100),
-                  SwitchListTile(
-                    value: _reduceMotion,
-                    onChanged: (val) => setState(() => _reduceMotion = val),
-                    activeTrackColor: AppColors.primary,
-                    title: Text('Reduce Motion', style: AppTextStyles.bodySemiBold14),
-                    subtitle: Text('Minimize transitions and animated effects', style: AppTextStyles.caption),
-                    secondary: Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: AppColors.settingVioletBg,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Icon(Icons.motion_photos_off_rounded, color: AppColors.settingViolet, size: 20),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Enterprise customers can apply corporate-wide custom CSS and brand colors to the Grozzy workspace dashboard.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white.withValues(alpha: 0.85),
+                      height: 1.35,
                     ),
                   ),
-                  const Divider(height: 1, indent: 68, color: AppColors.neutral100),
-                  SwitchListTile(
-                    value: _compactDensity,
-                    onChanged: (val) => setState(() => _compactDensity = val),
-                    activeTrackColor: AppColors.primary,
-                    title: Text('Compact View Mode', style: AppTextStyles.bodySemiBold14),
-                    subtitle: Text('Show more items per screen', style: AppTextStyles.caption),
-                    secondary: Container(
-                      padding: const EdgeInsets.all(8),
+                  const SizedBox(height: 16),
+                  InkWell(
+                    onTap: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Enterprise concierge contacted.'),
+                          behavior: SnackBarBehavior.floating,
+                        ),
+                      );
+                    },
+                    borderRadius: BorderRadius.circular(999),
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
                       decoration: BoxDecoration(
-                        color: AppColors.settingCyanBg,
-                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(999),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.black12,
+                            blurRadius: 4,
+                            offset: Offset(0, 2),
+                          ),
+                        ],
                       ),
-                      child: const Icon(Icons.density_medium_rounded, color: AppColors.settingCyan, size: 20),
+                      child: const Text(
+                        'Contact Enterprise',
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xFF002F87),
+                        ),
+                      ),
                     ),
                   ),
                 ],
+              ),
+            ),
+
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildThemeOptionCard({
+    required BuildContext context,
+    required String title,
+    required String subtitle,
+    required bool isSelected,
+    required VoidCallback onTap,
+    required Widget previewWidget,
+    required bool isDarkSurface,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: isDarkSurface ? const Color(0xFF1E293B) : Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: isSelected
+                ? const Color(0xFF2563EB)
+                : (isDarkSurface ? const Color(0xFF334155) : const Color(0xFFE2E8F0)),
+            width: isSelected ? 2 : 1,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: isSelected
+                  ? const Color(0xFF2563EB).withValues(alpha: 0.12)
+                  : Colors.black.withValues(alpha: isDarkSurface ? 0.2 : 0.02),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Header Row: Title, Subtitle, and Checkmark
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: TextStyle(
+                        fontSize: 14.5,
+                        fontWeight: FontWeight.w700,
+                        color: isDarkSurface ? Colors.white : const Color(0xFF0F172A),
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      subtitle,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: isDarkSurface ? const Color(0xFF94A3B8) : const Color(0xFF64748B),
+                      ),
+                    ),
+                  ],
+                ),
+                if (isSelected)
+                  Container(
+                    width: 22,
+                    height: 22,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFF2563EB),
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(
+                      Icons.check_rounded,
+                      color: Colors.white,
+                      size: 15,
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 14),
+
+            // Preview Graphic Box
+            previewWidget,
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLightPreview() {
+    return Container(
+      height: 96,
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF8FAFC),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0xFFE2E8F0)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 32,
+                height: 7,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFCBD5E1),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              const SizedBox(width: 6),
+              Container(
+                width: 48,
+                height: 7,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF93C5FD),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              Container(
+                width: 8,
+                height: 8,
+                decoration: const BoxDecoration(
+                  color: Color(0xFF3B82F6),
+                  shape: BoxShape.circle,
+                ),
+              ),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Container(
+                  height: 12,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(color: const Color(0xFFE2E8F0)),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Container(
+            height: 32,
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(color: const Color(0xFFE2E8F0)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 4,
+                  width: double.infinity,
+                  color: const Color(0xFFF1F5F9),
+                ),
+                const SizedBox(height: 4),
+                Container(
+                  height: 4,
+                  width: 140,
+                  color: const Color(0xFFF1F5F9),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildDarkPreview() {
+    return Container(
+      height: 96,
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: const Color(0xFF0F172A),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0xFF1E293B)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 32,
+                height: 7,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF334155),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              const SizedBox(width: 6),
+              Container(
+                width: 48,
+                height: 7,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF1E3A8A),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              Container(
+                width: 8,
+                height: 8,
+                decoration: const BoxDecoration(
+                  color: Color(0xFF60A5FA),
+                  shape: BoxShape.circle,
+                ),
+              ),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Container(
+                  height: 12,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF1E293B),
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Container(
+            height: 32,
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+            decoration: BoxDecoration(
+              color: const Color(0xFF1E293B),
+              borderRadius: BorderRadius.circular(6),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 4,
+                  width: double.infinity,
+                  color: const Color(0xFF334155),
+                ),
+                const SizedBox(height: 4),
+                Container(
+                  height: 4,
+                  width: 140,
+                  color: const Color(0xFF334155),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSystemPreview() {
+    return Container(
+      height: 96,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: const Color(0xFFE2E8F0)),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Row(
+          children: [
+            // Left Half: Light
+            Expanded(
+              child: Container(
+                color: const Color(0xFFF8FAFC),
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 28,
+                      height: 6,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFCBD5E1),
+                        borderRadius: BorderRadius.circular(3),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Container(
+                      height: 34,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(6),
+                        border: Border.all(color: const Color(0xFFE2E8F0)),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            // Right Half: Dark
+            Expanded(
+              child: Container(
+                color: const Color(0xFF0F172A),
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 28,
+                      height: 6,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF334155),
+                        borderRadius: BorderRadius.circular(3),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Container(
+                      height: 34,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF1E293B),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
@@ -199,74 +617,55 @@ class _ThemeAppearanceScreenState extends State<ThemeAppearanceScreen> {
     );
   }
 
-  Widget _buildThemeCard({
-    required String id,
+  Widget _buildSettingRow({
+    required bool isDark,
+    required Widget iconWidget,
     required String title,
-    required IconData icon,
-    required Color previewColor,
+    required String subtitle,
+    required bool value,
+    required ValueChanged<bool> onChanged,
   }) {
-    final isSelected = _selectedTheme == id;
-
-    return Expanded(
-      child: GestureDetector(
-        onTap: () => setState(() => _selectedTheme = id),
-        child: Container(
-          height: 110,
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: AppColors.white,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: isSelected ? AppColors.primary : AppColors.neutral200,
-              width: isSelected ? 2 : 1,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: isSelected
-                    ? AppColors.primary.withValues(alpha: 0.1)
-                    : AppColors.black.withValues(alpha: 0.02),
-                blurRadius: 8,
-                offset: const Offset(0, 4),
-              ),
-            ],
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                width: 38,
-                height: 38,
-                decoration: BoxDecoration(
-                  color: previewColor,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.neutral300, width: 1),
-                ),
-                child: Icon(
-                  icon,
-                  size: 20,
-                  color: id == 'dark' ? Colors.white : AppColors.neutral800,
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    title,
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: isSelected ? FontWeight.w700 : FontWeight.w600,
-                      color: isSelected ? AppColors.primary : AppColors.neutral800,
-                    ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      child: Row(
+        children: [
+          iconWidget,
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: isDark ? Colors.white : const Color(0xFF0F172A),
                   ),
-                  if (isSelected) ...[
-                    const SizedBox(width: 4),
-                    const Icon(Icons.check_circle_rounded, size: 14, color: AppColors.primary),
-                  ],
-                ],
-              ),
-            ],
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  subtitle,
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: isDark ? const Color(0xFF94A3B8) : const Color(0xFF64748B),
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
+          Transform.scale(
+            scale: 0.85,
+            child: Switch(
+              value: value,
+              onChanged: onChanged,
+              activeThumbColor: Colors.white,
+              activeTrackColor: const Color(0xFF2563EB),
+              inactiveTrackColor: isDark ? const Color(0xFF334155) : const Color(0xFFE2E8F0),
+              inactiveThumbColor: Colors.white,
+            ),
+          ),
+        ],
       ),
     );
   }

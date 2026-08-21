@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/theme_provider.dart';
 import 'account_setting_row.dart';
 
 class AccountSettingsList extends StatelessWidget {
@@ -8,14 +10,19 @@ class AccountSettingsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.white,
+        color: isDark ? const Color(0xFF1E293B) : AppColors.white,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.neutral200, width: 1),
+        border: Border.all(
+          color: isDark ? const Color(0xFF334155) : AppColors.neutral200,
+          width: 1,
+        ),
         boxShadow: [
           BoxShadow(
-            color: AppColors.black.withValues(alpha: 0.02),
+            color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.02),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -76,13 +83,22 @@ class AccountSettingsList extends StatelessWidget {
             ),
 
             // 6. Theme
-            AccountSettingRow(
-              icon: Icons.palette_outlined,
-              iconBgColor: AppColors.settingSlateBg,
-              iconColor: AppColors.settingSlate,
-              title: 'Theme',
-              description: 'System, Light, Dark mode',
-              onTap: () => context.push('/profile/theme'),
+            Builder(
+              builder: (ctx) {
+                final themeProv = ctx.watch<ThemeProvider>();
+                String themeLabel = 'Light Mode';
+                if (themeProv.appThemeMode == AppThemeMode.dark) themeLabel = 'Dark Mode';
+                if (themeProv.appThemeMode == AppThemeMode.system) themeLabel = 'System Default';
+
+                return AccountSettingRow(
+                  icon: Icons.palette_outlined,
+                  iconBgColor: AppColors.settingSlateBg,
+                  iconColor: AppColors.settingSlate,
+                  title: 'Theme',
+                  description: themeLabel,
+                  onTap: () => context.push('/profile/theme'),
+                );
+              },
             ),
 
             // 7. Help Center

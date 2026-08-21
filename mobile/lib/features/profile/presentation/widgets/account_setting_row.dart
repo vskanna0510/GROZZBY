@@ -26,6 +26,8 @@ class AccountSettingRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
     return Column(
       children: [
         Material(
@@ -42,7 +44,7 @@ class AccountSettingRow extends StatelessWidget {
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: iconBgColor,
+                      color: isDark ? iconColor.withValues(alpha: 0.15) : iconBgColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Center(
@@ -62,12 +64,16 @@ class AccountSettingRow extends StatelessWidget {
                       children: [
                         Text(
                           title,
-                          style: AppTextStyles.settingRowTitle,
+                          style: AppTextStyles.settingRowTitle.copyWith(
+                            color: isDark ? Colors.white : AppColors.neutral900,
+                          ),
                         ),
                         const SizedBox(height: 2),
                         Text(
                           description,
-                          style: AppTextStyles.settingRowSubtitle,
+                          style: AppTextStyles.settingRowSubtitle.copyWith(
+                            color: isDark ? const Color(0xFF94A3B8) : AppColors.neutral500,
+                          ),
                         ),
                       ],
                     ),
@@ -77,10 +83,10 @@ class AccountSettingRow extends StatelessWidget {
                   if (trailing != null)
                     trailing!
                   else
-                    const Icon(
+                    Icon(
                       Icons.chevron_right_rounded,
                       size: 20,
-                      color: AppColors.neutral400,
+                      color: isDark ? const Color(0xFF64748B) : AppColors.neutral400,
                     ),
                 ],
               ),
@@ -88,12 +94,12 @@ class AccountSettingRow extends StatelessWidget {
           ),
         ),
         if (showDivider)
-          const Padding(
-            padding: EdgeInsets.only(left: 68, right: 16),
+          Padding(
+            padding: const EdgeInsets.only(left: 68, right: 16),
             child: Divider(
               height: 1,
               thickness: 1,
-              color: AppColors.neutral100,
+              color: isDark ? const Color(0xFF334155) : AppColors.neutral100,
             ),
           ),
       ],

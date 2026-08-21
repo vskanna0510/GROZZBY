@@ -55,9 +55,10 @@ class ProfileScreen extends StatelessWidget {
     final cartCount = context.watch<CartProvider>().totalItemCount;
 
     final userName = auth.user?.name ?? 'Jonathan Sterling';
+    final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: isDark ? const Color(0xFF0B1120) : AppColors.background,
       body: SafeArea(
         child: Column(
           children: [
@@ -89,7 +90,9 @@ class ProfileScreen extends StatelessWidget {
                     // 2. Quick Actions Heading & 2x2 Grid
                     Text(
                       'Quick Actions',
-                      style: AppTextStyles.accountSectionTitle,
+                      style: AppTextStyles.accountSectionTitle.copyWith(
+                        color: isDark ? Colors.white : AppColors.neutral900,
+                      ),
                     ),
                     const SizedBox(height: 12),
                     QuickActionsGrid(
@@ -108,7 +111,9 @@ class ProfileScreen extends StatelessWidget {
                     // 3. Account Settings Heading & List Card
                     Text(
                       'Account Settings',
-                      style: AppTextStyles.accountSectionTitle,
+                      style: AppTextStyles.accountSectionTitle.copyWith(
+                        color: isDark ? Colors.white : AppColors.neutral900,
+                      ),
                     ),
                     const SizedBox(height: 12),
                     const AccountSettingsList(),
@@ -118,12 +123,14 @@ class ProfileScreen extends StatelessWidget {
                     // 4. Bottom Action: Switch Account
                     Container(
                       decoration: BoxDecoration(
-                        color: AppColors.white,
+                        color: isDark ? const Color(0xFF1E293B) : AppColors.white,
                         borderRadius: BorderRadius.circular(16),
-                        border: Border.all(color: AppColors.neutral200),
+                        border: Border.all(
+                          color: isDark ? const Color(0xFF334155) : AppColors.neutral200,
+                        ),
                         boxShadow: [
                           BoxShadow(
-                            color: AppColors.black.withValues(alpha: 0.02),
+                            color: Colors.black.withValues(alpha: isDark ? 0.2 : 0.02),
                             blurRadius: 8,
                             offset: const Offset(0, 3),
                           ),
@@ -141,12 +148,12 @@ class ProfileScreen extends StatelessWidget {
                                 Container(
                                   padding: const EdgeInsets.all(8),
                                   decoration: BoxDecoration(
-                                    color: AppColors.neutral100,
+                                    color: isDark ? const Color(0xFF334155) : AppColors.neutral100,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
-                                  child: const Icon(
+                                  child: Icon(
                                     Icons.switch_account_rounded,
-                                    color: AppColors.neutral800,
+                                    color: isDark ? const Color(0xFF60A5FA) : AppColors.neutral800,
                                     size: 20,
                                   ),
                                 ),
@@ -157,20 +164,24 @@ class ProfileScreen extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Switch Account',
-                                        style: AppTextStyles.bodySemiBold14,
+                                        style: AppTextStyles.bodySemiBold14.copyWith(
+                                          color: isDark ? Colors.white : AppColors.neutral900,
+                                        ),
                                       ),
                                       const SizedBox(height: 2),
                                       Text(
                                         'Logged in as $userName',
-                                        style: AppTextStyles.caption,
+                                        style: AppTextStyles.caption.copyWith(
+                                          color: isDark ? const Color(0xFF94A3B8) : AppColors.neutral500,
+                                        ),
                                       ),
                                     ],
                                   ),
                                 ),
-                                const Icon(
+                                Icon(
                                   Icons.chevron_right_rounded,
                                   size: 20,
-                                  color: AppColors.neutral400,
+                                  color: isDark ? const Color(0xFF64748B) : AppColors.neutral400,
                                 ),
                               ],
                             ),
@@ -184,9 +195,11 @@ class ProfileScreen extends StatelessWidget {
                     // 5. Bottom Action: Sign Out Button
                     Container(
                       decoration: BoxDecoration(
-                        color: AppColors.white,
+                        color: isDark ? const Color(0xFF1E293B) : AppColors.white,
                         borderRadius: BorderRadius.circular(16),
-                        border: Border.all(color: AppColors.dangerLight),
+                        border: Border.all(
+                          color: isDark ? const Color(0xFF7F1D1D) : AppColors.dangerLight,
+                        ),
                       ),
                       child: Material(
                         color: Colors.transparent,
@@ -200,7 +213,7 @@ class ProfileScreen extends StatelessWidget {
                                 Container(
                                   padding: const EdgeInsets.all(8),
                                   decoration: BoxDecoration(
-                                    color: AppColors.dangerLight,
+                                    color: isDark ? const Color(0xFF7F1D1D).withValues(alpha: 0.3) : AppColors.dangerLight,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: const Icon(
