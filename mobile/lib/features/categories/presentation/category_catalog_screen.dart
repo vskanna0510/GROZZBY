@@ -509,7 +509,8 @@ class _CategoryCatalogScreenState extends State<CategoryCatalogScreen> {
                         final isSelected = cat.id == _selectedCategoryId;
                         final count = ShopData.products.where((p) => p.categoryId == cat.id).length;
 
-                        return InkWell(
+                        return GestureDetector(
+                          behavior: HitTestBehavior.opaque,
                           onTap: () {
                             setState(() {
                               _selectedCategoryId = cat.id;
@@ -523,13 +524,9 @@ class _CategoryCatalogScreenState extends State<CategoryCatalogScreen> {
                             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
                             decoration: BoxDecoration(
                               color: isSelected
-                                  ? const Color(0xFFEFF6FF)
+                                  ? (isDark ? const Color(0xFF1E3A8A).withValues(alpha: 0.3) : const Color(0xFFEFF6FF))
                                   : Colors.transparent,
                               borderRadius: BorderRadius.circular(12),
-                              border: Border.all(
-                                color: isSelected ? const Color(0xFF2563EB) : Colors.transparent,
-                                width: 1.5,
-                              ),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
