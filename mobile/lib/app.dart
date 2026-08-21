@@ -1,0 +1,57 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'core/router/app_router.dart';
+import 'core/theme/app_theme.dart';
+import 'features/auth/data/auth_repository.dart';
+import 'features/auth/presentation/auth_controller.dart';
+import 'features/splash/presentation/splash_animation_screen.dart';
+import 'features/cart/data/cart_provider.dart';
+import 'features/wishlist/data/wishlist_provider.dart';
+import 'features/orders/data/orders_provider.dart';
+import 'features/profile/data/addresses_provider.dart';
+
+class GrozzbyApp extends StatelessWidget {
+  const GrozzbyApp({
+    super.key,
+    required this.router,
+  });
+
+  final GoRouter router;
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.router(
+      title: 'Grozzby',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.light,
+      routerConfig: router,
+    );
+  }
+}
+
+Future<void> bootstrap() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  final session = AppSession(prefs);
+  final authRepository = AuthRepository();
+
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => AuthController(repository: authRepository)),
+        ChangeNotifierProvider(create: (_) => CartProvider()),
+        ChangeNotifierProvider(create: (_) => WishlistProvider()),
+        ChangeNotifierProvider(create: (_) => OrdersProvider()),
+        ChangeNotifierProvider(create: (_) => AddressesProvider()),
+      ],
+      child: GrozzbyApp(
+        router: createAppRouter(
+          session: session,
+          authRepository: authRepository,
+        ),
+      ),
+    ),
+  );
+}

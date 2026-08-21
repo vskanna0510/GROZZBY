@@ -1,0 +1,29 @@
+abstract final class AppSpacing {
+  static const s0_5 = 2.0;
+  static const s1 = 4.0;
+  static const s1_5 = 6.0;
+  static const s2 = 8.0;
+  static const s2_5 = 10.0;
+  static const s3 = 12.0;
+  static const s3_5 = 15.0;
+  static const s4 = 16.0;
+  static const s4_2 = 17.0;
+  static const s4_3 = 18.0;
+  static const s5 = 20.0;
+  static const s6 = 24.0;
+  static const s6_2 = 26.0;
+  static const s7 = 27.0;
+  static const s7_2 = 29.0;
+  static const s8 = 32.0;
+  static const s8_2 = 33.0;
+  static const s9 = 37.0;
+  static const s10 = 40.0;
+  static const s11 = 43.0;
+  static const s12 = 47.0;
+  static const s12_2 = 52.0;
+  static const s14 = 56.0;
+  static const s16 = 66.0;
+
+  static const screenHorizontal = 33.0;
+  static const screenHorizontalAlt = 37.0;
+}

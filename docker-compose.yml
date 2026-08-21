@@ -1,0 +1,45 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: grozzby-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: grozzby
+      MYSQL_USER: grozzby
+      MYSQL_PASSWORD: grozzbypass
+    ports:
+      - "3306:3306"
+    volumes:
+      - grozzby_mysql_data:/var/lib/mysql
+      - ./backend/src/db/migrations/001_init.sql:/docker-entrypoint-initdb.d/001_init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "grozzby", "-pgrozzbypass"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: grozzby-backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      PORT: 3000
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: grozzby
+      DB_PASSWORD: grozzbypass
+      DB_NAME: grozzby
+      JWT_SECRET: dev-access-secret-change-in-production-min32
+      JWT_REFRESH_SECRET: dev-refresh-secret-change-in-production-min32
+      SMTP_FROM: noreply@grozzby.com
+    ports:
+      - "3000:3000"
+
+volumes:
+  grozzby_mysql_data:

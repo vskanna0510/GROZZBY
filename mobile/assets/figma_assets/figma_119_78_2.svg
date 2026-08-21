@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="42" height="4" viewBox="0 0 42 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Carousel Dots 1" clip-path="url(#clip0_211_253)">
+<path id="Vector" d="M16.9615 0H2.42308C1.08485 0 0 0.895431 0 2C0 3.10457 1.08485 4 2.42308 4H16.9615C18.2998 4 19.3846 3.10457 19.3846 2C19.3846 0.895431 18.2998 0 16.9615 0Z" fill="#F5B725"/>
+<path id="Vector_2" d="M30.6923 2C30.6923 0.895431 29.6075 0 28.2692 0C26.931 0 25.8462 0.895431 25.8462 2C25.8462 3.10457 26.931 4 28.2692 4C29.6075 4 30.6923 3.10457 30.6923 2Z" fill="white" fill-opacity="0.5"/>
+<path id="Vector_3" d="M42 2C42 0.895431 40.9152 0 39.5769 0C38.2387 0 37.1538 0.895431 37.1538 2C37.1538 3.10457 38.2387 4 39.5769 4C40.9152 4 42 3.10457 42 2Z" fill="white" fill-opacity="0.5"/>
+</g>
+<defs>
+<clipPath id="clip0_211_253">
+<rect width="42" height="4" fill="white"/>
+</clipPath>
+</defs>
+</svg>

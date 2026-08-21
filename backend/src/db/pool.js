@@ -1,0 +1,33 @@
+import mysql from 'mysql2/promise';
+import { env } from '../config/env.js';
+
+function createDbPool() {
+  if (env.db.url) {
+    return mysql.createPool({
+      uri: env.db.url,
+      waitForConnections: true,
+      connectionLimit: 10,
+      namedPlaceholders: true,
+      ssl: env.db.ssl ? { rejectUnauthorized: false } : undefined,
+    });
+  }
+
+  return mysql.createPool({
+    host: env.db.host,
+    port: env.db.port,
+    user: env.db.user,
+    password: env.db.password,
+    database: env.db.database,
+    waitForConnections: true,
+    connectionLimit: 10,
+    namedPlaceholders: true,
+    ssl: env.db.ssl ? { rejectUnauthorized: false } : undefined,
+  });
+}
+
+export const pool = createDbPool();
+
+export async function query(sql, params) {
+  const [rows] = await pool.execute(sql, params);
+  return rows;
+}

@@ -1,0 +1,1277 @@
+{
+  "2-79": {
+    "nodeId": "2-79",
+    "figmaNodeId": "2:79",
+    "name": "Vector",
+    "primaryAsset": "assets/figma_assets/figma_2_79.svg",
+    "assets": [
+      "assets/figma_assets/figma_2_79.svg",
+      "assets/figma_assets/figma_2_79_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector = \\\"http://localhost:3845/assets/df526330f269ad8380276fcfd26d534a4610f25c.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"2:79\\\" data-name=\\\"Vector\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgVector} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-84": {
+    "nodeId": "121-84",
+    "figmaNodeId": "121:84",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_84.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_84.svg",
+      "assets/figma_assets/figma_121_84_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/0dc09ce49a05352c50eaeec21bf13dcd2b72dc7d.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:84\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-104": {
+    "nodeId": "121-104",
+    "figmaNodeId": "121:104",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_104.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_104.svg",
+      "assets/figma_assets/figma_121_104_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/f3d14d8c59cabd572879da1139cfaf8f6ef5ae64.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:104\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-112": {
+    "nodeId": "121-112",
+    "figmaNodeId": "121:112",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_112.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_112.svg",
+      "assets/figma_assets/figma_121_112_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/1c2fd8ec9cb273b30c48e5d2471a50ae76a8f4b7.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:112\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-121": {
+    "nodeId": "121-121",
+    "figmaNodeId": "121:121",
+    "name": "Button",
+    "primaryAsset": "assets/figma_assets/figma_121_121.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_121.svg",
+      "assets/figma_assets/figma_121_121_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/bf8d5b96a69f71ddb60555046b27f30ca32b0950.svg\\\";\\n\\nexport default function Button() {\\n  return (\\n    <div className=\\\"content-stretch flex items-center justify-center relative rounded-[9999px] size-full\\\" data-node-id=\\\"121:121\\\" data-name=\\\"Button\\\">\\n      <div className=\\\"relative shrink-0 size-[16px]\\\" data-node-id=\\\"121:122\\\" data-name=\\\"Container\\\">\\n        <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-124": {
+    "nodeId": "121-124",
+    "figmaNodeId": "121:124",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_124.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_124.svg",
+      "assets/figma_assets/figma_121_124_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/dce37128f2a8326913dfdec927cbddb2465259e8.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:124\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-98": {
+    "nodeId": "121-98",
+    "figmaNodeId": "121:98",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_98.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_98.svg",
+      "assets/figma_assets/figma_121_98_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/3f59ddea1c25f5b631df48f94a25419fca87405b.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:98\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-92": {
+    "nodeId": "121-92",
+    "figmaNodeId": "121:92",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_92.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_92.svg",
+      "assets/figma_assets/figma_121_92_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/c2a72641f18a3fec1ba8e48944d82141ed5f6116.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:92\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-114": {
+    "nodeId": "121-114",
+    "figmaNodeId": "121:114",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_114.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_114.svg",
+      "assets/figma_assets/figma_121_114_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/574a52a4e7839c06cf1824699c2f6431ca0d8b9d.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:114\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-131": {
+    "nodeId": "121-131",
+    "figmaNodeId": "121:131",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_131.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_131.svg",
+      "assets/figma_assets/figma_121_131_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/af3503061b529aa19f1c9260187ca1786a01b5a0.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:131\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-86": {
+    "nodeId": "121-86",
+    "figmaNodeId": "121:86",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_86.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_86.svg",
+      "assets/figma_assets/figma_121_86_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/1610e92c7305c0b962fcff91dbcdfe0f1ee4dcd0.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:86\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-108": {
+    "nodeId": "121-108",
+    "figmaNodeId": "121:108",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_108.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_108.svg",
+      "assets/figma_assets/figma_121_108_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/cca52f55a6088d8f6ba46981b3f5ad11d66193b1.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:108\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-116": {
+    "nodeId": "121-116",
+    "figmaNodeId": "121:116",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_116.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_116.svg",
+      "assets/figma_assets/figma_121_116_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg = \\\"http://localhost:3845/assets/a8a99ca42202cfc79aba8a1d4494e913dc7e2fbe.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"content-stretch flex flex-col items-start relative size-full\\\" data-node-id=\\\"121:116\\\" data-name=\\\"Container\\\">\\n      <div className=\\\"relative shrink-0 size-[24px]\\\" data-node-id=\\\"121:117\\\" data-name=\\\"SVG\\\">\\n        <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n      </div>\\n      <div className=\\\"absolute bg-[#f97316] border-2 border-solid border-white content-stretch flex h-[19px] items-center justify-center p-[2px] right-[-4px] rounded-[9999px] top-[-6px] w-[16px]\\\" data-node-id=\\\"121:119\\\" data-name=\\\"Background+Border\\\">\\n        <div className=\\\"[word-break:break-word] flex flex-col font-['Inter:Regular'] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-center text-white whitespace-nowrap\\\" data-node-id=\\\"121:120\\\">\\n          <p className=\\\"leading-[15px]\\\">2</p>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-127": {
+    "nodeId": "121-127",
+    "figmaNodeId": "121:127",
+    "name": "SVG",
+    "primaryAsset": "assets/figma_assets/figma_121_127.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_127.svg",
+      "assets/figma_assets/figma_121_127_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg = \\\"http://localhost:3845/assets/84b081ff35bb3f47e243731a4d5b484f52e01787.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:127\\\" data-name=\\\"SVG\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-133": {
+    "nodeId": "121-133",
+    "figmaNodeId": "121:133",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_133.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_133.svg",
+      "assets/figma_assets/figma_121_133_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/0534766fdfa2a4d66c9899084de92b494fb7be93.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:133\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-130": {
+    "nodeId": "121-130",
+    "figmaNodeId": "121:130",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_130.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_130.svg",
+      "assets/figma_assets/figma_121_130_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/028ddfc53a707fb078b59e400feffdfd692402d9.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:130\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-135": {
+    "nodeId": "121-135",
+    "figmaNodeId": "121:135",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_135.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_135.svg",
+      "assets/figma_assets/figma_121_135_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/f91feed1a437590b779375c60483a95363d57200.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:135\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-143": {
+    "nodeId": "121-143",
+    "figmaNodeId": "121:143",
+    "name": "Warm Minimalism 1",
+    "primaryAsset": "assets/figma_assets/figma_121_143.png",
+    "assets": [
+      "assets/figma_assets/figma_121_143.png",
+      "assets/figma_assets/figma_121_143_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgWarmMinimalism1 = \\\"http://localhost:3845/assets/052f02e3127693ae761a473914ef8b0dfabd6975.png\\\";\\n\\nexport default function WarmMinimalism() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:143\\\" data-name=\\\"Warm Minimalism 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgWarmMinimalism1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-149": {
+    "nodeId": "121-149",
+    "figmaNodeId": "121:149",
+    "name": "Nike Air Max 1",
+    "primaryAsset": "assets/figma_assets/figma_121_149.png",
+    "assets": [
+      "assets/figma_assets/figma_121_149.png",
+      "assets/figma_assets/figma_121_149_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgNikeAirMax1 = \\\"http://localhost:3845/assets/45f8b4e59163421f6ed22e9380a500b12dc040df.png\\\";\\n\\nexport default function NikeAirMax() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:149\\\" data-name=\\\"Nike Air Max 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgNikeAirMax1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-146": {
+    "nodeId": "121-146",
+    "figmaNodeId": "121:146",
+    "name": "Icon@2x 1",
+    "primaryAsset": "assets/figma_assets/figma_121_146.png",
+    "assets": [
+      "assets/figma_assets/figma_121_146.png",
+      "assets/figma_assets/figma_121_146_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon2X1 = \\\"http://localhost:3845/assets/24089adf69432036cb8febd525b49d0b40befbb9.png\\\";\\n\\nexport default function Icon2X() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:146\\\" data-name=\\\"Icon@2x 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgIcon2X1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-147": {
+    "nodeId": "121-147",
+    "figmaNodeId": "121:147",
+    "name": "Lounge Chair 1",
+    "primaryAsset": "assets/figma_assets/figma_121_147.png",
+    "assets": [
+      "assets/figma_assets/figma_121_147.png",
+      "assets/figma_assets/figma_121_147_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgLoungeChair1 = \\\"http://localhost:3845/assets/a0aec7389b59c267fe9e6cb147a75e605ac97963.png\\\";\\n\\nexport default function LoungeChair() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:147\\\" data-name=\\\"Lounge Chair 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgLoungeChair1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-150": {
+    "nodeId": "121-150",
+    "figmaNodeId": "121:150",
+    "name": "Warm Minimalism Interior 1",
+    "primaryAsset": "assets/figma_assets/figma_121_150.png",
+    "assets": [
+      "assets/figma_assets/figma_121_150.png",
+      "assets/figma_assets/figma_121_150_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgWarmMinimalismInterior1 = \\\"http://localhost:3845/assets/796add284db907dbdaab5961d88bd34ab327433b.png\\\";\\n\\nexport default function WarmMinimalismInterior() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:150\\\" data-name=\\\"Warm Minimalism Interior 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgWarmMinimalismInterior1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-137": {
+    "nodeId": "121-137",
+    "figmaNodeId": "121:137",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_137.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_137.svg",
+      "assets/figma_assets/figma_121_137_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/af8059ea7efdddd3078b8ab95e7cfbcc66523f95.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:137\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-148": {
+    "nodeId": "121-148",
+    "figmaNodeId": "121:148",
+    "name": "Mechanical Keyboards 1",
+    "primaryAsset": "assets/figma_assets/figma_121_148.png",
+    "assets": [
+      "assets/figma_assets/figma_121_148.png",
+      "assets/figma_assets/figma_121_148_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgMechanicalKeyboards1 = \\\"http://localhost:3845/assets/57653eee34392a32aa7b817694c2e3186f486a16.png\\\";\\n\\nexport default function MechanicalKeyboards() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:148\\\" data-name=\\\"Mechanical Keyboards 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgMechanicalKeyboards1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-144": {
+    "nodeId": "121-144",
+    "figmaNodeId": "121:144",
+    "name": "AirPods Max 1",
+    "primaryAsset": "assets/figma_assets/figma_121_144.png",
+    "assets": [
+      "assets/figma_assets/figma_121_144.png",
+      "assets/figma_assets/figma_121_144_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgAirPodsMax1 = \\\"http://localhost:3845/assets/80a01c293454e5a768802b3f810b70c136c76f40.png\\\";\\n\\nexport default function AirPodsMax() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:144\\\" data-name=\\\"AirPods Max 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgAirPodsMax1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-145": {
+    "nodeId": "121-145",
+    "figmaNodeId": "121:145",
+    "name": "Eco-Runner Pro 1",
+    "primaryAsset": "assets/figma_assets/figma_121_145.png",
+    "assets": [
+      "assets/figma_assets/figma_121_145.png",
+      "assets/figma_assets/figma_121_145_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgEcoRunnerPro1 = \\\"http://localhost:3845/assets/3940265ec9f655f8d3cacbbb013d135ed8d0f426.png\\\";\\n\\nexport default function EcoRunnerPro() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:145\\\" data-name=\\\"Eco-Runner Pro 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgEcoRunnerPro1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-139": {
+    "nodeId": "121-139",
+    "figmaNodeId": "121:139",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_139.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_139.svg",
+      "assets/figma_assets/figma_121_139_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/4aea73f3cdcc9fb3aa0218e055bf162ffd94d9c6.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:139\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-403": {
+    "nodeId": "121-403",
+    "figmaNodeId": "121:403",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_403.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_403.svg",
+      "assets/figma_assets/figma_121_403_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/338d671c483473b13b998476c657c6b3c0c7017b.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:403\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-406": {
+    "nodeId": "121-406",
+    "figmaNodeId": "121:406",
+    "name": "SVG",
+    "primaryAsset": "assets/figma_assets/figma_121_406.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_406.svg",
+      "assets/figma_assets/figma_121_406_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg = \\\"http://localhost:3845/assets/2def89b8904077d0177bd9303df5f5741b6aff2e.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:406\\\" data-name=\\\"SVG\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-408": {
+    "nodeId": "121-408",
+    "figmaNodeId": "121:408",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_408.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_408.svg",
+      "assets/figma_assets/figma_121_408_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/8f14ba6a94fa2785e915a63960f219abe4e4c4d6.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:408\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-411": {
+    "nodeId": "121-411",
+    "figmaNodeId": "121:411",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_411.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_411.svg",
+      "assets/figma_assets/figma_121_411_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/29969c07f0d81eb5d5616ad056571e139a3fb1fe.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:411\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-415": {
+    "nodeId": "121-415",
+    "figmaNodeId": "121:415",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_415.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_415.svg",
+      "assets/figma_assets/figma_121_415_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/72970c495fb15105b267018e3478ba6978d4737c.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:415\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-55": {
+    "nodeId": "119-55",
+    "figmaNodeId": "119:55",
+    "name": "SVG-3 1",
+    "primaryAsset": "assets/figma_assets/figma_119_55.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_55.svg",
+      "assets/figma_assets/figma_119_55_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg31 = \\\"http://localhost:3845/assets/b53477e6f7be9abf0d609219b89f533c8e4ce876.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:55\\\" data-name=\\\"SVG-3 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg31} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-57": {
+    "nodeId": "119-57",
+    "figmaNodeId": "119:57",
+    "name": "SVG-4 1",
+    "primaryAsset": "assets/figma_assets/figma_119_57.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_57.svg",
+      "assets/figma_assets/figma_119_57_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg41 = \\\"http://localhost:3845/assets/301590f2091fe2423bec1cd7bfe99046c182c97a.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:57\\\" data-name=\\\"SVG-4 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg41} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-62": {
+    "nodeId": "119-62",
+    "figmaNodeId": "119:62",
+    "name": "SVG-7 1",
+    "primaryAsset": "assets/figma_assets/figma_119_62.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_62.svg",
+      "assets/figma_assets/figma_119_62_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg71 = \\\"http://localhost:3845/assets/0c26d4ada74c31ca449a8f74ee54adece4301780.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:62\\\" data-name=\\\"SVG-7 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg71} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-68": {
+    "nodeId": "119-68",
+    "figmaNodeId": "119:68",
+    "name": "SVG-9 1",
+    "primaryAsset": "assets/figma_assets/figma_119_68.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_68.svg",
+      "assets/figma_assets/figma_119_68_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg91 = \\\"http://localhost:3845/assets/5778f5d402219234f2a55f4c6cbc696feed90cdc.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:68\\\" data-name=\\\"SVG-9 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg91} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-70": {
+    "nodeId": "119-70",
+    "figmaNodeId": "119:70",
+    "name": "Vector",
+    "primaryAsset": "assets/figma_assets/figma_119_70.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_70.svg",
+      "assets/figma_assets/figma_119_70_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector2 = \\\"http://localhost:3845/assets/c69ac27f4070950c4f0e6c8dd1a3bda847cd6c96.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:70\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgVector2} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-78": {
+    "nodeId": "119-78",
+    "figmaNodeId": "119:78",
+    "name": "Carousel Dots 1",
+    "primaryAsset": "assets/figma_assets/figma_119_78.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_78.svg",
+      "assets/figma_assets/figma_119_78_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgCarouselDots1 = \\\"http://localhost:3845/assets/60693a5231af25d9674a65d73b23be9d04d275ad.svg\\\";\\n\\nexport default function CarouselDots() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:78\\\" data-name=\\\"Carousel Dots 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgCarouselDots1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-82": {
+    "nodeId": "119-82",
+    "figmaNodeId": "119:82",
+    "name": "Icon 3",
+    "primaryAsset": "assets/figma_assets/figma_119_82.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_82.svg",
+      "assets/figma_assets/figma_119_82_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon3 = \\\"http://localhost:3845/assets/6408e12fa23ad05e234322e20bc3a1c400822fca.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:82\\\" data-name=\\\"Icon 3\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon3} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-59": {
+    "nodeId": "119-59",
+    "figmaNodeId": "119:59",
+    "name": "SVG-5 1",
+    "primaryAsset": "assets/figma_assets/figma_119_59.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_59.svg",
+      "assets/figma_assets/figma_119_59_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/0097e7d0215de4fe3da35c37fd1bfa3730cebe4b.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:59\\\" data-name=\\\"SVG-5 1\\\">\\n      <div className=\\\"absolute inset-[11.18%_12.83%_17.62%_12.83%]\\\" data-node-id=\\\"119:60\\\" data-name=\\\"Group\\\">\\n        <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgGroup} />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-64": {
+    "nodeId": "119-64",
+    "figmaNodeId": "119:64",
+    "name": "SVG-6 1",
+    "primaryAsset": "assets/figma_assets/figma_119_64.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_64.svg",
+      "assets/figma_assets/figma_119_64_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg61 = \\\"http://localhost:3845/assets/1f1c091d53b680d3164b9ed60d3217f286fd2b53.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:64\\\" data-name=\\\"SVG-6 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg61} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-66": {
+    "nodeId": "119-66",
+    "figmaNodeId": "119:66",
+    "name": "SVG-8 1",
+    "primaryAsset": "assets/figma_assets/figma_119_66.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_66.svg",
+      "assets/figma_assets/figma_119_66_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg81 = \\\"http://localhost:3845/assets/ac336c5319358547494f7b1b0ed994eed302110e.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:66\\\" data-name=\\\"SVG-8 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg81} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-76": {
+    "nodeId": "119-76",
+    "figmaNodeId": "119:76",
+    "name": "Vector-3 1",
+    "primaryAsset": "assets/figma_assets/figma_119_76.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_76.svg",
+      "assets/figma_assets/figma_119_76_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector31 = \\\"http://localhost:3845/assets/a0fcdabc0823cc050153d419501d3189a44c68b7.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:76\\\" data-name=\\\"Vector-3 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgVector31} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-72": {
+    "nodeId": "119-72",
+    "figmaNodeId": "119:72",
+    "name": "Vector-1 1",
+    "primaryAsset": "assets/figma_assets/figma_119_72.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_72.svg",
+      "assets/figma_assets/figma_119_72_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector11 = \\\"http://localhost:3845/assets/3189608e5b34cc97a89d9f3d1d7244826466703b.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:72\\\" data-name=\\\"Vector-1 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgVector11} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-84": {
+    "nodeId": "119-84",
+    "figmaNodeId": "119:84",
+    "name": "Icon-1 3",
+    "primaryAsset": "assets/figma_assets/figma_119_84.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_84.svg",
+      "assets/figma_assets/figma_119_84_1.svg",
+      "assets/figma_assets/figma_119_84_3.svg",
+      "assets/figma_assets/figma_119_84_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/0f04d29bfddec1184f4af02f22b0cb0989e01f58.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/197e51d665c7dea5700cbacfc0715ff109e76014.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:84\\\" data-name=\\\"Icon-1 3\\\">\\n      <div className=\\\"absolute contents inset-[0_-999.98%_0_0]\\\" data-node-id=\\\"119:89\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[12.5%_-908.31%_12.5%_91.67%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.833px_-2.125px] mask-size-[22px_17px]\\\" data-node-id=\\\"119:85\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-7.19%_-5%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-90": {
+    "nodeId": "119-90",
+    "figmaNodeId": "119:90",
+    "name": "Icon-2 1",
+    "primaryAsset": "assets/figma_assets/figma_119_90.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_90.svg",
+      "assets/figma_assets/figma_119_90_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon21 = \\\"http://localhost:3845/assets/5a91e03c6f52a5748127ddaddbf98df3e8a595b5.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:90\\\" data-name=\\\"Icon-2 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon21} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-92": {
+    "nodeId": "119-92",
+    "figmaNodeId": "119:92",
+    "name": "Icon-3 1",
+    "primaryAsset": "assets/figma_assets/figma_119_92.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_92.svg",
+      "assets/figma_assets/figma_119_92_1.svg",
+      "assets/figma_assets/figma_119_92_3.svg",
+      "assets/figma_assets/figma_119_92_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/fb34a69763942b44d6fa5d93090f335771ba1338.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/099da4303abd969f2244386550b0618f889334df.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:92\\\" data-name=\\\"Icon-3 1\\\">\\n      <div className=\\\"absolute contents inset-0\\\" data-node-id=\\\"119:101\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[9.1%_8.04%_8.04%_9.21%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.657px_-1.548px] mask-size-[18px_17px]\\\" data-node-id=\\\"119:93\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-6.51%_-6.15%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-102": {
+    "nodeId": "119-102",
+    "figmaNodeId": "119:102",
+    "name": "Icon-4 1",
+    "primaryAsset": "assets/figma_assets/figma_119_102.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_102.svg",
+      "assets/figma_assets/figma_119_102_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon41 = \\\"http://localhost:3845/assets/34a1b5b696900274c1a0074598df9f43293bb314.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:102\\\" data-name=\\\"Icon-4 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon41} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-105": {
+    "nodeId": "119-105",
+    "figmaNodeId": "119:105",
+    "name": "Icon-5 1",
+    "primaryAsset": "assets/figma_assets/figma_119_105.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_105.svg",
+      "assets/figma_assets/figma_119_105_1.svg",
+      "assets/figma_assets/figma_119_105_3.svg",
+      "assets/figma_assets/figma_119_105_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/03aba37ed7335d5139b9ec59af26873754305c5e.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/94bc0ec97ce8856791fd5b2cf413667ffa7d6d32.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:105\\\" data-name=\\\"Icon-5 1\\\">\\n      <div className=\\\"absolute contents inset-0\\\" data-node-id=\\\"119:110\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[8.33%_9.39%_8.34%_9.38%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.595px_-1.417px] mask-size-[17px_17px]\\\" data-node-id=\\\"119:106\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-6.47%_-6.64%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-111": {
+    "nodeId": "119-111",
+    "figmaNodeId": "119:111",
+    "name": "Icon-6 1",
+    "primaryAsset": "assets/figma_assets/figma_119_111.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_111.svg",
+      "assets/figma_assets/figma_119_111_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon61 = \\\"http://localhost:3845/assets/58e50189aa3e4667d0129cfb96ae4c92ba2eaef9.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:111\\\" data-name=\\\"Icon-6 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon61} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-113": {
+    "nodeId": "119-113",
+    "figmaNodeId": "119:113",
+    "name": "Icon-7 1",
+    "primaryAsset": "assets/figma_assets/figma_119_113.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_113.svg",
+      "assets/figma_assets/figma_119_113_1.svg",
+      "assets/figma_assets/figma_119_113_3.svg",
+      "assets/figma_assets/figma_119_113_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/fb34a69763942b44d6fa5d93090f335771ba1338.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/88ce8eff9d5fa60a47f3ebb28a98d5a860bdc73c.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:113\\\" data-name=\\\"Icon-7 1\\\">\\n      <div className=\\\"absolute contents inset-0\\\" data-node-id=\\\"119:122\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[16.67%_8.34%_16.67%_8.33%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.5px_-2.833px] mask-size-[18px_17px]\\\" data-node-id=\\\"119:114\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-8.09%_-6.11%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-55": {
+    "nodeId": "120-55",
+    "figmaNodeId": "120:55",
+    "name": "AB6AXU~2 1",
+    "primaryAsset": "assets/figma_assets/figma_120_55.png",
+    "assets": [
+      "assets/figma_assets/figma_120_55.png",
+      "assets/figma_assets/figma_120_55_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgAb6Axu21 = \\\"http://localhost:3845/assets/6a6b9d7bea919d54d38a76a19fbd75dc3decc60a.png\\\";\\n\\nexport default function Ab6Axu() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:55\\\" data-name=\\\"AB6AXU~2 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgAb6Axu21} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-74": {
+    "nodeId": "119-74",
+    "figmaNodeId": "119:74",
+    "name": "Vector-2 1",
+    "primaryAsset": "assets/figma_assets/figma_119_74.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_74.svg",
+      "assets/figma_assets/figma_119_74_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector21 = \\\"http://localhost:3845/assets/e98a845a1fabffca6b46580ba29e0ecded2a742f.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:74\\\" data-name=\\\"Vector-2 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgVector21} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-144": {
+    "nodeId": "119-144",
+    "figmaNodeId": "119:144",
+    "name": "SVG-1 1",
+    "primaryAsset": "assets/figma_assets/figma_119_144.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_144.svg",
+      "assets/figma_assets/figma_119_144_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg11 = \\\"http://localhost:3845/assets/bc90015ff7b5d2bb278a8c57fd539878c201ff53.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:144\\\" data-name=\\\"SVG-1 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg11} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-133": {
+    "nodeId": "119-133",
+    "figmaNodeId": "119:133",
+    "name": "Icon-9 1",
+    "primaryAsset": "assets/figma_assets/figma_119_133.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_133.svg",
+      "assets/figma_assets/figma_119_133_1.svg",
+      "assets/figma_assets/figma_119_133_3.svg",
+      "assets/figma_assets/figma_119_133_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/03aba37ed7335d5139b9ec59af26873754305c5e.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/c214bdc6f199c3803c5c62d855fe1a1297a2b2f4.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:133\\\" data-name=\\\"Icon-9 1\\\">\\n      <div className=\\\"absolute contents inset-0\\\" data-node-id=\\\"119:140\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[12.5%_8.34%_12.5%_8.33%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.417px_-2.125px] mask-size-[17px_17px]\\\" data-node-id=\\\"119:134\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-7.19%_-6.47%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-146": {
+    "nodeId": "119-146",
+    "figmaNodeId": "119:146",
+    "name": "SVG-2 1",
+    "primaryAsset": "assets/figma_assets/figma_119_146.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_146.svg",
+      "assets/figma_assets/figma_119_146_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg21 = \\\"http://localhost:3845/assets/e9f853ba4d6bf3ef338b7f194bbe5498e2d804e8.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:146\\\" data-name=\\\"SVG-2 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg21} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-123": {
+    "nodeId": "119-123",
+    "figmaNodeId": "119:123",
+    "name": "Icon-8 1",
+    "primaryAsset": "assets/figma_assets/figma_119_123.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_123.svg",
+      "assets/figma_assets/figma_119_123_1.svg",
+      "assets/figma_assets/figma_119_123_3.svg",
+      "assets/figma_assets/figma_119_123_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/fb34a69763942b44d6fa5d93090f335771ba1338.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/1f8e73b76b5e77a25173715723ee98ea52e51a21.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:123\\\" data-name=\\\"Icon-8 1\\\">\\n      <div className=\\\"absolute contents inset-0\\\" data-node-id=\\\"119:132\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[8.33%_8.33%_8.33%_8.34%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.501px_-1.416px] mask-size-[18px_17px]\\\" data-node-id=\\\"119:124\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-6.47%_-6.11%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "119-141": {
+    "nodeId": "119-141",
+    "figmaNodeId": "119:141",
+    "name": "SVG 1",
+    "primaryAsset": "assets/figma_assets/figma_119_141.svg",
+    "assets": [
+      "assets/figma_assets/figma_119_141.svg",
+      "assets/figma_assets/figma_119_141_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg1 = \\\"http://localhost:3845/assets/031a13823dc41e0fb0827076823b7d9e4af44d20.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"119:141\\\" data-name=\\\"SVG 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-57": {
+    "nodeId": "120-57",
+    "figmaNodeId": "120:57",
+    "name": "GROZZBYdddd 1 1",
+    "primaryAsset": "assets/figma_assets/figma_120_57.png",
+    "assets": [
+      "assets/figma_assets/figma_120_57.png",
+      "assets/figma_assets/figma_120_57_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGrozzbYdddd11 = \\\"http://localhost:3845/assets/e6f3a010c0196530c2f4d8fbceecb452306d613b.png\\\";\\n\\nexport default function GrozzbYdddd() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:57\\\" data-name=\\\"GROZZBYdddd 1 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgGrozzbYdddd11} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-56": {
+    "nodeId": "120-56",
+    "figmaNodeId": "120:56",
+    "name": "AB6AXU~1 1",
+    "primaryAsset": "assets/figma_assets/figma_120_56.png",
+    "assets": [
+      "assets/figma_assets/figma_120_56.png",
+      "assets/figma_assets/figma_120_56_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgAb6Axu11 = \\\"http://localhost:3845/assets/f87e8b18b41747e29095a1b7a2bd44054cae259a.png\\\";\\n\\nexport default function Ab6Axu() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:56\\\" data-name=\\\"AB6AXU~1 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgAb6Axu11} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-58": {
+    "nodeId": "120-58",
+    "figmaNodeId": "120:58",
+    "name": "Image 1",
+    "primaryAsset": "assets/figma_assets/figma_120_58.png",
+    "assets": [
+      "assets/figma_assets/figma_120_58.png",
+      "assets/figma_assets/figma_120_58_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgImage1 = \\\"http://localhost:3845/assets/1da0954b189284788ca8f450d92d05a266008bc5.png\\\";\\n\\nexport default function Image() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:58\\\" data-name=\\\"Image 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgImage1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-59": {
+    "nodeId": "120-59",
+    "figmaNodeId": "120:59",
+    "name": "Image-1 1",
+    "primaryAsset": "assets/figma_assets/figma_120_59.png",
+    "assets": [
+      "assets/figma_assets/figma_120_59.png",
+      "assets/figma_assets/figma_120_59_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgImage11 = \\\"http://localhost:3845/assets/49ca835c4a6f54c13e5bd609504b64aebeb099a7.png\\\";\\n\\nexport default function Image() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:59\\\" data-name=\\\"Image-1 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgImage11} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-60": {
+    "nodeId": "120-60",
+    "figmaNodeId": "120:60",
+    "name": "SVG-6 2",
+    "primaryAsset": "assets/figma_assets/figma_120_60.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_60.svg",
+      "assets/figma_assets/figma_120_60_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg62 = \\\"http://localhost:3845/assets/548bdf53fcff8386f5e7db4bf0da79ba337b3116.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:60\\\" data-name=\\\"SVG-6 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg62} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-64": {
+    "nodeId": "120-64",
+    "figmaNodeId": "120:64",
+    "name": "SVG-7 2",
+    "primaryAsset": "assets/figma_assets/figma_120_64.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_64.svg",
+      "assets/figma_assets/figma_120_64_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg72 = \\\"http://localhost:3845/assets/bf31503cfc2e8cf37edbea95085cb3a7de9c5f44.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:64\\\" data-name=\\\"SVG-7 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg72} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-62": {
+    "nodeId": "120-62",
+    "figmaNodeId": "120:62",
+    "name": "SVG-8 2",
+    "primaryAsset": "assets/figma_assets/figma_120_62.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_62.svg",
+      "assets/figma_assets/figma_120_62_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg82 = \\\"http://localhost:3845/assets/e255fa41f267a5affe5659c714df2ec3084aaa58.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:62\\\" data-name=\\\"SVG-8 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg82} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-87": {
+    "nodeId": "120-87",
+    "figmaNodeId": "120:87",
+    "name": "Icon-1 4",
+    "primaryAsset": "assets/figma_assets/figma_120_87.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_87.svg",
+      "assets/figma_assets/figma_120_87_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon14 = \\\"http://localhost:3845/assets/640fee2adcb7bb9a370f1cf70632d1c96c58dc84.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:87\\\" data-name=\\\"Icon-1 4\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon14} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-85": {
+    "nodeId": "120-85",
+    "figmaNodeId": "120:85",
+    "name": "SVG-12 1",
+    "primaryAsset": "assets/figma_assets/figma_120_85.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_85.svg",
+      "assets/figma_assets/figma_120_85_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg121 = \\\"http://localhost:3845/assets/86c7ebf852590c7e88576dc5345a0a7545293b79.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:85\\\" data-name=\\\"SVG-12 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg121} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-96": {
+    "nodeId": "120-96",
+    "figmaNodeId": "120:96",
+    "name": "SVG-1 3",
+    "primaryAsset": "assets/figma_assets/figma_120_96.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_96.svg",
+      "assets/figma_assets/figma_120_96_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg13 = \\\"http://localhost:3845/assets/d70789176055baca4e35516ff265d3340eae7b99.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:96\\\" data-name=\\\"SVG-1 3\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg13} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-94": {
+    "nodeId": "120-94",
+    "figmaNodeId": "120:94",
+    "name": "SVG 2",
+    "primaryAsset": "assets/figma_assets/figma_120_94.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_94.svg",
+      "assets/figma_assets/figma_120_94_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg2 = \\\"http://localhost:3845/assets/3be89cfaff99594e6806931a39246ad54ef56f6f.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:94\\\" data-name=\\\"SVG 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg2} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-102": {
+    "nodeId": "120-102",
+    "figmaNodeId": "120:102",
+    "name": "SVG-2 2",
+    "primaryAsset": "assets/figma_assets/figma_120_102.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_102.svg",
+      "assets/figma_assets/figma_120_102_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg22 = \\\"http://localhost:3845/assets/2c3eaa44d916d033cb7e3e89622e671e6d0889c9.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:102\\\" data-name=\\\"SVG-2 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg22} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-68": {
+    "nodeId": "120-68",
+    "figmaNodeId": "120:68",
+    "name": "SVG-9 2",
+    "primaryAsset": "assets/figma_assets/figma_120_68.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_68.svg",
+      "assets/figma_assets/figma_120_68_1.svg",
+      "assets/figma_assets/figma_120_68_3.svg",
+      "assets/figma_assets/figma_120_68_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/fdf8c09b842f98cf667089fb8e4c28a511c839a1.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/87be326b1ee33b10d3934a50f7c96123dcf7275b.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:68\\\" data-name=\\\"SVG-9 2\\\">\\n      <div className=\\\"absolute contents inset-0\\\" data-node-id=\\\"120:73\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[8.33%_9.38%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.501px_-1.333px] mask-size-[16px_16px]\\\" data-node-id=\\\"120:69\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-5%_-5.13%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-80": {
+    "nodeId": "120-80",
+    "figmaNodeId": "120:80",
+    "name": "SVG-11 1",
+    "primaryAsset": "assets/figma_assets/figma_120_80.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_80.svg",
+      "assets/figma_assets/figma_120_80_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg111 = \\\"http://localhost:3845/assets/c6bc367923634eb2c49005215329dae2b93d5c84.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:80\\\" data-name=\\\"SVG-11 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg111} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-98": {
+    "nodeId": "120-98",
+    "figmaNodeId": "120:98",
+    "name": "SVG-3 2",
+    "primaryAsset": "assets/figma_assets/figma_120_98.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_98.svg",
+      "assets/figma_assets/figma_120_98_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg32 = \\\"http://localhost:3845/assets/8b57f6d0da036687d5452b1f05ee89a65dbf72d3.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:98\\\" data-name=\\\"SVG-3 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg32} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-92": {
+    "nodeId": "120-92",
+    "figmaNodeId": "120:92",
+    "name": "Icon-3 2",
+    "primaryAsset": "assets/figma_assets/figma_120_92.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_92.svg",
+      "assets/figma_assets/figma_120_92_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon32 = \\\"http://localhost:3845/assets/d584cb1f7571748ecdf41ed8f93d620d315cb2eb.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:92\\\" data-name=\\\"Icon-3 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon32} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-90": {
+    "nodeId": "120-90",
+    "figmaNodeId": "120:90",
+    "name": "Icon-2 2",
+    "primaryAsset": "assets/figma_assets/figma_120_90.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_90.svg",
+      "assets/figma_assets/figma_120_90_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon22 = \\\"http://localhost:3845/assets/84d05e3d4623cb1aafa046d496bbaa977171f164.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:90\\\" data-name=\\\"Icon-2 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon22} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-83": {
+    "nodeId": "120-83",
+    "figmaNodeId": "120:83",
+    "name": "Icon 4",
+    "primaryAsset": "assets/figma_assets/figma_120_83.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_83.svg",
+      "assets/figma_assets/figma_120_83_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon4 = \\\"http://localhost:3845/assets/3c3e4da34bfc77d3784738502c6c9d502f3e4538.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:83\\\" data-name=\\\"Icon 4\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon4} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-74": {
+    "nodeId": "120-74",
+    "figmaNodeId": "120:74",
+    "name": "SVG-10 1",
+    "primaryAsset": "assets/figma_assets/figma_120_74.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_74.svg",
+      "assets/figma_assets/figma_120_74_1.svg",
+      "assets/figma_assets/figma_120_74_3.svg",
+      "assets/figma_assets/figma_120_74_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgGroup = \\\"http://localhost:3845/assets/c6b40c8a9ea2c53b8a0e0d92a0c4897e3f43b60e.svg\\\";\\nconst imgGroup1 = \\\"http://localhost:3845/assets/ccac34401a89eae952d30ffc75ce9928828e5e07.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:74\\\" data-name=\\\"SVG-10 1\\\">\\n      <div className=\\\"absolute contents inset-0\\\" data-node-id=\\\"120:79\\\" data-name=\\\"Clip path group\\\">\\n        <div className=\\\"absolute inset-[20.83%_12.5%] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[-1.5px_-2.5px] mask-size-[12px_12px]\\\" data-node-id=\\\"120:75\\\" style={{ maskImage: `url(\\\"${imgGroup}\\\")` }} data-name=\\\"Group\\\">\\n          <div className=\\\"absolute inset-[-10.71%_-8.33%]\\\">\\n            <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgGroup1} />\\n          </div>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-106": {
+    "nodeId": "120-106",
+    "figmaNodeId": "120:106",
+    "name": "SVG-5 2",
+    "primaryAsset": "assets/figma_assets/figma_120_106.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_106.svg",
+      "assets/figma_assets/figma_120_106_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg52 = \\\"http://localhost:3845/assets/3efeb9a930b10fdde9f5b142d02aa9e37a8a1b28.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:106\\\" data-name=\\\"SVG-5 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg52} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-109": {
+    "nodeId": "120-109",
+    "figmaNodeId": "120:109",
+    "name": "SVG-4 2",
+    "primaryAsset": "assets/figma_assets/figma_120_109.svg",
+    "assets": [
+      "assets/figma_assets/figma_120_109.svg",
+      "assets/figma_assets/figma_120_109_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg42 = \\\"http://localhost:3845/assets/d392e4b738a5885fbc7869ac8f4d1a8ab2e5d19e.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:109\\\" data-name=\\\"SVG-4 2\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg42} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-114": {
+    "nodeId": "120-114",
+    "figmaNodeId": "120:114",
+    "name": "Summer Collection 1",
+    "primaryAsset": "assets/figma_assets/figma_120_114.png",
+    "assets": [
+      "assets/figma_assets/figma_120_114.png",
+      "assets/figma_assets/figma_120_114_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSummerCollection1 = \\\"http://localhost:3845/assets/15eed6a4e11043c22d89092b0ca384fe9ae04fc4.png\\\";\\n\\nexport default function SummerCollection() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:114\\\" data-name=\\\"Summer Collection 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgSummerCollection1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-112": {
+    "nodeId": "120-112",
+    "figmaNodeId": "120:112",
+    "name": "Home 1",
+    "primaryAsset": "assets/figma_assets/figma_120_112.png",
+    "assets": [
+      "assets/figma_assets/figma_120_112.png",
+      "assets/figma_assets/figma_120_112_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgHome1 = \\\"http://localhost:3845/assets/1ab191e844822a29672b94aaa3eec7e607e89d9f.png\\\";\\n\\nexport default function Home() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:112\\\" data-name=\\\"Home 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgHome1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-115": {
+    "nodeId": "120-115",
+    "figmaNodeId": "120:115",
+    "name": "Beauty 1",
+    "primaryAsset": "assets/figma_assets/figma_120_115.png",
+    "assets": [
+      "assets/figma_assets/figma_120_115.png",
+      "assets/figma_assets/figma_120_115_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgBeauty1 = \\\"http://localhost:3845/assets/ac9b1e50a6a11eb9fa7b872ea82b2b396b3d1287.png\\\";\\n\\nexport default function Beauty() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:115\\\" data-name=\\\"Beauty 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgBeauty1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-113": {
+    "nodeId": "120-113",
+    "figmaNodeId": "120:113",
+    "name": "Shoes 1",
+    "primaryAsset": "assets/figma_assets/figma_120_113.png",
+    "assets": [
+      "assets/figma_assets/figma_120_113.png",
+      "assets/figma_assets/figma_120_113_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgShoes1 = \\\"http://localhost:3845/assets/e094aa399b5ab4ecbf4df50b2ac7a9f8b60c8796.png\\\";\\n\\nexport default function Shoes() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:113\\\" data-name=\\\"Shoes 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgShoes1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-116": {
+    "nodeId": "120-116",
+    "figmaNodeId": "120:116",
+    "name": "Electronics 1",
+    "primaryAsset": "assets/figma_assets/figma_120_116.png",
+    "assets": [
+      "assets/figma_assets/figma_120_116.png",
+      "assets/figma_assets/figma_120_116_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgElectronics1 = \\\"http://localhost:3845/assets/e9089acc6b9f80b0e6156cf19d8fe72abc171b25.png\\\";\\n\\nexport default function Electronics() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:116\\\" data-name=\\\"Electronics 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgElectronics1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "120-117": {
+    "nodeId": "120-117",
+    "figmaNodeId": "120:117",
+    "name": "Fashion 1",
+    "primaryAsset": "assets/figma_assets/figma_120_117.png",
+    "assets": [
+      "assets/figma_assets/figma_120_117.png",
+      "assets/figma_assets/figma_120_117_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgFashion1 = \\\"http://localhost:3845/assets/309f2c9cae02f8e863ddb4bed16291158b294e96.png\\\";\\n\\nexport default function Fashion() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"120:117\\\" data-name=\\\"Fashion 1\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgFashion1} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-163": {
+    "nodeId": "121-163",
+    "figmaNodeId": "121:163",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_163.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_163.svg",
+      "assets/figma_assets/figma_121_163_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/1c2fd8ec9cb273b30c48e5d2471a50ae76a8f4b7.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:163\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-153": {
+    "nodeId": "121-153",
+    "figmaNodeId": "121:153",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_153.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_153.svg",
+      "assets/figma_assets/figma_121_153_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/bebc669d5483099656a1690a621e370dd8dd8816.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:153\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-155": {
+    "nodeId": "121-155",
+    "figmaNodeId": "121:155",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_155.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_155.svg",
+      "assets/figma_assets/figma_121_155_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/62c0c711eda70fb2f8ef7b1f77fd7305be387ca9.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:155\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-165": {
+    "nodeId": "121-165",
+    "figmaNodeId": "121:165",
+    "name": "Vector",
+    "primaryAsset": "assets/figma_assets/figma_121_165.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_165.svg",
+      "assets/figma_assets/figma_121_165_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector = \\\"http://localhost:3845/assets/126e74eaa5c5d4f866bdd3c50f130aec32884a02.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:165\\\" data-name=\\\"Vector\\\">\\n      <div className=\\\"absolute inset-[-5.56%_-6.25%]\\\">\\n        <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgVector} />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-160": {
+    "nodeId": "121-160",
+    "figmaNodeId": "121:160",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_160.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_160.svg",
+      "assets/figma_assets/figma_121_160_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/2bef9073841397c3728999792896b9170b70d300.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:160\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-151": {
+    "nodeId": "121-151",
+    "figmaNodeId": "121:151",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_151.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_151.svg",
+      "assets/figma_assets/figma_121_151_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/404a84ca37ae6a2e6a0f25d955dbed2927b023ab.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:151\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-162": {
+    "nodeId": "121-162",
+    "figmaNodeId": "121:162",
+    "name": "Symbol",
+    "primaryAsset": "assets/figma_assets/figma_121_162.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_162.svg",
+      "assets/figma_assets/figma_121_162_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSymbol = \\\"http://localhost:3845/assets/32cec54ee8f6204ccd11f9d4e98beb6000f2be74.svg\\\";\\n\\nexport default function Symbol() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:162\\\" data-name=\\\"Symbol\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSymbol} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-189": {
+    "nodeId": "121-189",
+    "figmaNodeId": "121:189",
+    "name": "Background",
+    "primaryAsset": "assets/figma_assets/figma_121_189.png",
+    "assets": [
+      "assets/figma_assets/figma_121_189.png",
+      "assets/figma_assets/figma_121_189_1.svg",
+      "assets/figma_assets/figma_121_189_3.png",
+      "assets/figma_assets/figma_121_189_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgAb6AXuAzruc6I9BowX2Idrj9K0Co7S0FRuAmfi9FyWbImTTc5LlyinHxjVfy2HLSlM1F8T2Wmx4MieVpapZvppghYJyJ8O5WkVr77Sa64JLh6ADo55OOcy3OqA6Kw2By3DMebLbl9NtB1CXlJnee4QMpwDasydIiUjS5Bz37MfrJxh81LpMyo09ULgUw2Yc4CJv2JMabVNoh8D5EBmVkRc6Dvqq4ZjZ0CqFkZt8OzmKiCsZLrA0C6DAiXhIm7FNBslzyrsqDqs90G = \\\"http://localhost:3845/assets/9c0b152520ffd2f6546d35f28bff1ad4b1c9f97e.png\\\";\\nconst imgSvg = \\\"http://localhost:3845/assets/b6d1d490185fa0f6d9f11ba24925fe36c38e52ef.svg\\\";\\n\\nexport default function Background() {\\n  return (\\n    <div className=\\\"bg-[#f9fafb] overflow-clip relative rounded-[12px] size-full\\\" data-node-id=\\\"121:189\\\" data-name=\\\"Background\\\">\\n      <div className=\\\"absolute inset-[-3px_0.5px_-2px_0.5px]\\\" data-node-id=\\\"121:190\\\" data-name=\\\"AB6AXuAzruc6-i9bowX2IDRJ9K0CO7s0fRUAmfi9fyWBImTTc5llyinHXJVfy2hLSlM-1F8T2Wmx4MieVPAPZvppghYJyJ8o_5wkVR77Sa64JLh6ADo55oOcy3oqA6kw2BY3dMebLbl9NtB1cXlJNEE4QMpwDasydIiUjS5Bz37MfrJXH81_LpMyo09uLGUw2yc4cJv2jMabV_Noh8_D5EBmVKRc6dvqq4ZjZ0CQFkZT8ozmKiCsZLrA0c6DAiXhIM7fNBslzyrsqDqs90g\\\">\\n        <div className=\\\"absolute inset-0 overflow-hidden pointer-events-none\\\">\\n          <img alt=\\\"\\\" className=\\\"absolute h-full left-[-41.76%] max-w-none top-0 w-[183.51%]\\\" src={imgAb6AXuAzruc6I9BowX2Idrj9K0Co7S0FRuAmfi9FyWbImTTc5LlyinHxjVfy2HLSlM1F8T2Wmx4MieVpapZvppghYJyJ8O5WkVr77Sa64JLh6ADo55OOcy3OqA6Kw2By3DMebLbl9NtB1CXlJnee4QMpwDasydIiUjS5Bz37MfrJxh81LpMyo09ULgUw2Yc4CJv2JMabVNoh8D5EBmVkRc6Dvqq4ZjZ0CqFkZt8OzmKiCsZLrA0C6DAiXhIm7FNBslzyrsqDqs90G} />\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[#ef4444] content-stretch flex flex-col items-start left-[8px] px-[6px] py-[2px] rounded-[6px] top-[8px]\\\" data-node-id=\\\"121:191\\\" data-name=\\\"Background\\\">\\n        <div className=\\\"[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-white whitespace-nowrap\\\" data-node-id=\\\"121:192\\\">\\n          <p className=\\\"leading-[15px]\\\">-40%</p>\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[rgba(255,255,255,0.8)] content-stretch flex flex-col items-start p-[6px] right-[8px] rounded-[9999px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] top-[8px]\\\" data-node-id=\\\"121:193\\\" data-name=\\\"Button\\\">\\n        <div className=\\\"relative shrink-0 size-[16px]\\\" data-node-id=\\\"121:194\\\" data-name=\\\"SVG\\\">\\n          <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[#f0fdf4] bottom-[8px] content-stretch flex items-center left-[8px] px-[6px] py-[2px] rounded-[4px]\\\" data-node-id=\\\"121:196\\\" data-name=\\\"Background\\\">\\n        <div className=\\\"[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#16a34a] text-[8px] uppercase whitespace-nowrap\\\" data-node-id=\\\"121:197\\\">\\n          <p className=\\\"leading-[12px]\\\">FREE DELIVERY</p>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-159": {
+    "nodeId": "121-159",
+    "figmaNodeId": "121:159",
+    "name": "Vector",
+    "primaryAsset": "assets/figma_assets/figma_121_159.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_159.svg",
+      "assets/figma_assets/figma_121_159_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector = \\\"http://localhost:3845/assets/349d1b1319b6f6322d7fb2196383c91862fdddce.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:159\\\" data-name=\\\"Vector\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgVector} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-157": {
+    "nodeId": "121-157",
+    "figmaNodeId": "121:157",
+    "name": "SVG",
+    "primaryAsset": "assets/figma_assets/figma_121_157.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_157.svg",
+      "assets/figma_assets/figma_121_157_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg = \\\"http://localhost:3845/assets/74374d221280ec7aca0b8d3bee6276dc869cbd68.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:157\\\" data-name=\\\"SVG\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-173": {
+    "nodeId": "121-173",
+    "figmaNodeId": "121:173",
+    "name": "Background",
+    "primaryAsset": "assets/figma_assets/figma_121_173.png",
+    "assets": [
+      "assets/figma_assets/figma_121_173.png",
+      "assets/figma_assets/figma_121_173_1.svg",
+      "assets/figma_assets/figma_121_173_3.png",
+      "assets/figma_assets/figma_121_173_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgAb6AXuC5SCkrrRkFjEuxXoyVBu7EiTj5GWg9LKSjiNfZoxa7Wk8Cs8XpZYq0VZdMnQn1J0Cl8C1ZbCsCqAtBreA5BWe0A9FDhf8K4Z92BRgL4K4A5Ke2VFYJkv4Vv9KjYnW8UJax6ARqyxecIcJrdQHcWczE4IqIgTccyb6Lf1J0NTi4DtWn29PL9FRhLvqdJhOqsqz9KpLm2Jsy3Wgwv8IGxxxzZyC6X43SJaEc9RxUJdSAixeIaJYhRpLjB5Wq70AOwAkfM = \\\"http://localhost:3845/assets/f789dc5097ee7b449f1e2dec459d68e30539fba1.png\\\";\\nconst imgSvg = \\\"http://localhost:3845/assets/b6d1d490185fa0f6d9f11ba24925fe36c38e52ef.svg\\\";\\n\\nexport default function Background() {\\n  return (\\n    <div className=\\\"bg-[#f9fafb] overflow-clip relative rounded-[12px] size-full\\\" data-node-id=\\\"121:173\\\" data-name=\\\"Background\\\">\\n      <div className=\\\"absolute inset-[0_0.5px]\\\" data-node-id=\\\"121:174\\\" data-name=\\\"AB6AXuC5_SCkrrRkFJEuxXoyVBu7eiTJ5g-WG9lKSjiNfZOXA7wk8-CS8XpZYq0VZdMnQn1J0Cl8C1_zbCsCQAtBreA5BWe0A9FDhf8K4Z92bRgL4K4A5ke2v-fYJkv4vv9KjYn_w8uJax6aRQYXECIcJrdQHcWczE4IQIgTccyb6LF1j0nTi4DtWN29pL9-FRhLvqd-jhOqsqz9KpLM2jsy3Wgwv8IGxxxzZyC6X43sJaEc9rxUJd_sAIXEIaJYhRp-LjB5wq70aOwAkfM\\\">\\n        <div className=\\\"absolute inset-0 overflow-hidden pointer-events-none\\\">\\n          <img alt=\\\"\\\" className=\\\"absolute h-full left-[-36.83%] max-w-none top-[0.08%] w-[156.95%]\\\" src={imgAb6AXuC5SCkrrRkFjEuxXoyVBu7EiTj5GWg9LKSjiNfZoxa7Wk8Cs8XpZYq0VZdMnQn1J0Cl8C1ZbCsCqAtBreA5BWe0A9FDhf8K4Z92BRgL4K4A5Ke2VFYJkv4Vv9KjYnW8UJax6ARqyxecIcJrdQHcWczE4IqIgTccyb6Lf1J0NTi4DtWn29PL9FRhLvqdJhOqsqz9KpLm2Jsy3Wgwv8IGxxxzZyC6X43SJaEc9RxUJdSAixeIaJYhRpLjB5Wq70AOwAkfM} />\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[#ef4444] content-stretch flex flex-col items-start left-[8px] px-[6px] py-[2px] rounded-[6px] top-[8px]\\\" data-node-id=\\\"121:175\\\" data-name=\\\"Background\\\">\\n        <div className=\\\"[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-white whitespace-nowrap\\\" data-node-id=\\\"121:176\\\">\\n          <p className=\\\"leading-[15px]\\\">-40%</p>\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[rgba(255,255,255,0.8)] content-stretch flex flex-col items-start p-[6px] right-[8px] rounded-[9999px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] top-[8px]\\\" data-node-id=\\\"121:177\\\" data-name=\\\"Button\\\">\\n        <div className=\\\"relative shrink-0 size-[16px]\\\" data-node-id=\\\"121:178\\\" data-name=\\\"SVG\\\">\\n          <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-198": {
+    "nodeId": "121-198",
+    "figmaNodeId": "121:198",
+    "name": "AB6AXuDv54lkr9d_Z0TzsB7C5UHCL3JxZgPsdGMgoVuYN1rnq9JqQM4l88bxeWdbzZsdUrz794UB9K6D6CsCPshCqEWUt5ZD9ESsnH4UPpM17Y0PqdWzhqwso3AIOmWOJATijpXFkYHGs9ZbdCLb7h8hzOLKn-2AAJ7ycpcCSmzG9SbKJflj0qGkBa0PPhAgy8nB6eYXT-_9q8vjeDjwetQaSEm6UL3iBCzMVDF4GIjwRyqK9vkOrkBXB9mo3q1gCPRGCnjo7qkHpDYFyUQ",
+    "primaryAsset": "assets/figma_assets/figma_121_198.png",
+    "assets": [
+      "assets/figma_assets/figma_121_198.png",
+      "assets/figma_assets/figma_121_198_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgAb6AXuDv54Lkr9DZ0TzsB7C5Uhcl3JxZgPsdGMgoVuYn1Rnq9JqQm4L88BxeWdbzZsdUrz794Ub9K6D6CsCPshCqEwUt5Zd9ESsnH4UPpM17Y0PqdWzhqwso3AiOmWojaTijpXFkYhGs9ZbdCLb7H8HzOlKn2Aaj7YcpcCSmzG9SbKJflj0QGkBa0PPhAgy8NB6EYxt9Q8VjeDjwetQaSEm6Ul3IBCzMvdf4GIjwRyqK9VkOrkBxb9Mo3Q1GCprgCnjo7QkHpDyFyUq = \\\"http://localhost:3845/assets/0335d789ea0e1e12f2516601878e138edbefab35.png\\\";\\n\\nexport default function Ab6AXuDv54Lkr9DZ0TzsB7C5Uhcl3JxZgPsdGMgoVuYn1Rnq9JqQm4L88BxeWdbzZsdUrz794Ub9K6D6CsCPshCqEwUt5Zd9ESsnH4UPpM17Y0PqdWzhqwso3AiOmWojaTijpXFkYhGs9ZbdCLb7H8HzOlKn2Aaj7YcpcCSmzG9SbKJflj0QGkBa0PPhAgy8NB6EYxt9Q8VjeDjwetQaSEm6Ul3IBCzMvdf4GIjwRyqK9VkOrkBxb9Mo3Q1GCprgCnjo7QkHpDyFyUq() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:198\\\" data-name=\\\"AB6AXuDv54lkr9d_Z0TzsB7C5UHCL3JxZgPsdGMgoVuYN1rnq9JqQM4l88bxeWdbzZsdUrz794UB9K6D6CsCPshCqEWUt5ZD9ESsnH4UPpM17Y0PqdWzhqwso3AIOmWOJATijpXFkYHGs9ZbdCLb7h8hzOLKn-2AAJ7ycpcCSmzG9SbKJflj0qGkBa0PPhAgy8nB6eYXT-_9q8vjeDjwetQaSEm6UL3iBCzMVDF4GIjwRyqK9vkOrkBXB9mo3q1gCPRGCnjo7qkHpDYFyUQ\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-cover pointer-events-none size-full\\\" src={imgAb6AXuDv54Lkr9DZ0TzsB7C5Uhcl3JxZgPsdGMgoVuYn1Rnq9JqQm4L88BxeWdbzZsdUrz794Ub9K6D6CsCPshCqEwUt5Zd9ESsnH4UPpM17Y0PqdWzhqwso3AiOmWojaTijpXFkYhGs9ZbdCLb7H8HzOlKn2Aaj7YcpcCSmzG9SbKJflj0QGkBa0PPhAgy8NB6EYxt9Q8VjeDjwetQaSEm6Ul3IBCzMvdf4GIjwRyqK9VkOrkBxb9Mo3Q1GCprgCnjo7QkHpDyFyUq} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-180": {
+    "nodeId": "121-180",
+    "figmaNodeId": "121:180",
+    "name": "Background",
+    "primaryAsset": "assets/figma_assets/figma_121_180.png",
+    "assets": [
+      "assets/figma_assets/figma_121_180.png",
+      "assets/figma_assets/figma_121_180_1.svg",
+      "assets/figma_assets/figma_121_180_3.png",
+      "assets/figma_assets/figma_121_180_4.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgAb6AXuAjEam0N1Fi571SmGaLrGn21YKguT2Wu2QokSkaXsPwacN5ADimQd1DouMul3FOaqy3DIaDOjQu4X142UQrlfqCpX0OJacZeZZdgb3Nxn30NlyJh4JEke7Wzym7GqAcXkmhkfc9Vmc9UYq6Hu0PcNpUJu1JHoQx7MeyzcnAwHvHyfkHfzLq5CBynJgJlByWzLajcIJwiu6V6GwMrsPmO1E2PjvdAw5BFc9FdMgwp0Frx7JE5TzRobvajLOoszn7ZX7ZwCNhZokU = \\\"http://localhost:3845/assets/624baed4a1dc7f897517652746035412000bf0c8.png\\\";\\nconst imgSvg = \\\"http://localhost:3845/assets/b6d1d490185fa0f6d9f11ba24925fe36c38e52ef.svg\\\";\\n\\nexport default function Background() {\\n  return (\\n    <div className=\\\"bg-[#f9fafb] overflow-clip relative rounded-[12px] size-full\\\" data-node-id=\\\"121:180\\\" data-name=\\\"Background\\\">\\n      <div className=\\\"absolute inset-[-3px_0_-9px_1px]\\\" data-node-id=\\\"121:181\\\" data-name=\\\"AB6AXuAJEam0N1Fi571SmGaLrGn21YKguT2Wu2qokSkaXsPwacN5aDIM_qd1DOUMul3fOaqy3dIaDOjQU4X142uQrlfqCpX0oJacZeZZdgb3nxn30NLY_jh4jEKE7wzym7GqAcXkmhkfc9VMC9UYq6hu0PCNpUJu1JHoQx7meyzcnAwHvHyfkHfzLQ5cBynJgJLByWZLajcIJwiu6V6GwMrsPmO1e2PjvdAw5bFc9fdMgwp0FRX7jE5tzRobvajLOoszn7zX7_ZwCNhZokU\\\">\\n        <div className=\\\"absolute inset-0 overflow-hidden pointer-events-none\\\">\\n          <img alt=\\\"\\\" className=\\\"absolute h-[114.85%] left-[-82.17%] max-w-none top-[-9.55%] w-[213.58%]\\\" src={imgAb6AXuAjEam0N1Fi571SmGaLrGn21YKguT2Wu2QokSkaXsPwacN5ADimQd1DouMul3FOaqy3DIaDOjQu4X142UQrlfqCpX0OJacZeZZdgb3Nxn30NlyJh4JEke7Wzym7GqAcXkmhkfc9Vmc9UYq6Hu0PcNpUJu1JHoQx7MeyzcnAwHvHyfkHfzLq5CBynJgJlByWzLajcIJwiu6V6GwMrsPmO1E2PjvdAw5BFc9FdMgwp0Frx7JE5TzRobvajLOoszn7ZX7ZwCNhZokU} />\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[#ef4444] content-stretch flex flex-col items-start left-[8px] px-[6px] py-[2px] rounded-[6px] top-[8px]\\\" data-node-id=\\\"121:182\\\" data-name=\\\"Background\\\">\\n        <div className=\\\"[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-white whitespace-nowrap\\\" data-node-id=\\\"121:183\\\">\\n          <p className=\\\"leading-[15px]\\\">-40%</p>\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[rgba(255,255,255,0.8)] content-stretch flex flex-col items-start p-[6px] right-[8px] rounded-[9999px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] top-[8px]\\\" data-node-id=\\\"121:184\\\" data-name=\\\"Button\\\">\\n        <div className=\\\"relative shrink-0 size-[16px]\\\" data-node-id=\\\"121:185\\\" data-name=\\\"SVG\\\">\\n          <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n        </div>\\n      </div>\\n      <div className=\\\"absolute bg-[#f0fdf4] bottom-[8px] content-stretch flex items-center left-[8px] px-[6px] py-[2px] rounded-[4px]\\\" data-node-id=\\\"121:187\\\" data-name=\\\"Background\\\">\\n        <div className=\\\"[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[#16a34a] text-[8px] uppercase whitespace-nowrap\\\" data-node-id=\\\"121:188\\\">\\n          <p className=\\\"leading-[12px]\\\">FREE DELIVERY</p>\\n        </div>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-169": {
+    "nodeId": "121-169",
+    "figmaNodeId": "121:169",
+    "name": "Container",
+    "primaryAsset": null,
+    "assets": [],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"export default function Container() {\\n  return (\\n    <div className=\\\"content-stretch flex flex-col items-center relative size-full\\\" data-node-id=\\\"121:169\\\" data-name=\\\"Container\\\">\\n      <div className=\\\"[word-break:break-word] flex flex-col font-['Inter:Medium'] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[10px] text-center text-white whitespace-nowrap\\\" data-node-id=\\\"121:170\\\">\\n        <p className=\\\"leading-[15px]\\\">Filter</p>\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-166": {
+    "nodeId": "121-166",
+    "figmaNodeId": "121:166",
+    "name": "Margin",
+    "primaryAsset": "assets/figma_assets/figma_121_166.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_166.svg",
+      "assets/figma_assets/figma_121_166_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/90f40fcc168cc2323ac2acd4070f6b0f64c8b07e.svg\\\";\\n\\nexport default function Margin() {\\n  return (\\n    <div className=\\\"content-stretch flex flex-col items-start pb-[4px] relative size-full\\\" data-node-id=\\\"121:166\\\" data-name=\\\"Margin\\\">\\n      <div className=\\\"h-[13.125px] relative shrink-0 w-[14px]\\\" data-node-id=\\\"121:167\\\" data-name=\\\"Container\\\">\\n        <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-263": {
+    "nodeId": "121-263",
+    "figmaNodeId": "121:263",
+    "name": "Vector",
+    "primaryAsset": "assets/figma_assets/figma_121_263.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_263.svg",
+      "assets/figma_assets/figma_121_263_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector = \\\"http://localhost:3845/assets/126e74eaa5c5d4f866bdd3c50f130aec32884a02.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:263\\\" data-name=\\\"Vector\\\">\\n      <div className=\\\"absolute inset-[-5.56%_-6.25%]\\\">\\n        <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgVector} />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-278": {
+    "nodeId": "121-278",
+    "figmaNodeId": "121:278",
+    "name": "Container",
+    "primaryAsset": null,
+    "assets": [],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"export default function Container() {\\n  return (\\n    <div className=\\\"content-stretch flex items-center relative size-full\\\" data-node-id=\\\"121:278\\\" data-name=\\\"Container\\\">\\n      <div className=\\\"content-stretch flex flex-[1_0_0] flex-col items-start min-w-px pl-[148.8px] pr-[161.2px] relative\\\" data-node-id=\\\"121:279\\\" data-name=\\\"Container\\\">\\n        <div className=\\\"bg-[#2563eb] border-4 border-solid border-white relative rounded-[12px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.1)] shrink-0 size-[24px]\\\" data-node-id=\\\"121:280\\\" data-name=\\\"Background+Border+Shadow\\\" />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-281": {
+    "nodeId": "121-281",
+    "figmaNodeId": "121:281",
+    "name": "Input",
+    "primaryAsset": "assets/figma_assets/figma_121_281.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_281.svg",
+      "assets/figma_assets/figma_121_281_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgImage = \\\"http://localhost:3845/assets/2ea817731c111a2a0e0e38206f06b1884937ae67.svg\\\";\\n\\nexport default function Input() {\\n  return (\\n    <div className=\\\"bg-[#2563eb] border border-[rgba(0,0,0,0)] border-solid content-stretch flex flex-col items-center justify-center overflow-clip p-px relative rounded-[4px] size-full\\\" data-node-id=\\\"121:281\\\" data-name=\\\"Input\\\">\\n      <div className=\\\"relative shrink-0 size-[20px]\\\" data-node-id=\\\"121:282\\\" data-name=\\\"image\\\">\\n        <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgImage} />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-284": {
+    "nodeId": "121-284",
+    "figmaNodeId": "121:284",
+    "name": "Input",
+    "primaryAsset": null,
+    "assets": [],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"export default function Input() {\\n  return <div className=\\\"bg-white border border-[#d4c4ad] border-solid overflow-clip relative rounded-[4px] size-full\\\" data-node-id=\\\"121:284\\\" data-name=\\\"Input\\\" />;\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-285": {
+    "nodeId": "121-285",
+    "figmaNodeId": "121:285",
+    "name": "Icon",
+    "primaryAsset": "assets/figma_assets/figma_121_285.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_285.svg",
+      "assets/figma_assets/figma_121_285_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgIcon = \\\"http://localhost:3845/assets/d6229f496d92cb426ba7b2e508e4fbdf792e8469.svg\\\";\\n\\nexport default function Icon() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:285\\\" data-name=\\\"Icon\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgIcon} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-286": {
+    "nodeId": "121-286",
+    "figmaNodeId": "121:286",
+    "name": "Label",
+    "primaryAsset": null,
+    "assets": [],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"export default function Label() {\\n  return (\\n    <div className=\\\"content-stretch flex items-center relative size-full\\\" data-node-id=\\\"121:286\\\" data-name=\\\"Label\\\">\\n      <div className=\\\"bg-[#1d4ed8] h-[24px] relative rounded-[9999px] shrink-0 w-[44px]\\\" data-node-id=\\\"121:287\\\" data-name=\\\"Background\\\" />\\n      <div className=\\\"absolute bg-white border border-solid border-white left-[22px] rounded-[9999px] size-[20px] top-[2px]\\\" data-node-id=\\\"121:288\\\" data-name=\\\"Background+Border\\\" />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-215": {
+    "nodeId": "121-215",
+    "figmaNodeId": "121:215",
+    "name": "Vector",
+    "primaryAsset": "assets/figma_assets/figma_121_215.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_215.svg",
+      "assets/figma_assets/figma_121_215_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgVector = \\\"http://localhost:3845/assets/126e74eaa5c5d4f866bdd3c50f130aec32884a02.svg\\\";\\n\\nexport default function Vector() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:215\\\" data-name=\\\"Vector\\\">\\n      <div className=\\\"absolute inset-[-5.56%_-6.25%]\\\">\\n        <img alt=\\\"\\\" className=\\\"block max-w-none size-full\\\" src={imgVector} />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-247": {
+    "nodeId": "121-247",
+    "figmaNodeId": "121:247",
+    "name": "Premium No Results Illustration/Visual",
+    "primaryAsset": "assets/figma_assets/figma_121_247.png",
+    "assets": [
+      "assets/figma_assets/figma_121_247.png",
+      "assets/figma_assets/figma_121_247_2.png"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgBackground = \\\"http://localhost:3845/assets/7918626135cb25a472cb9b5b052d169863c8625b.png\\\";\\n\\nexport default function PremiumNoResultsIllustrationVisual() {\\n  return (\\n    <div className=\\\"content-stretch flex flex-col items-start relative size-full\\\" data-node-id=\\\"121:247\\\" data-name=\\\"Premium No Results Illustration/Visual\\\">\\n      <div className=\\\"content-stretch flex h-[169px] items-center justify-center relative rounded-[6px] shrink-0 w-[256px]\\\" data-node-id=\\\"121:248\\\" data-name=\\\"Background\\\">\\n        <img alt=\\\"\\\" className=\\\"absolute inset-0 max-w-none object-contain pointer-events-none rounded-[6px] size-full\\\" src={imgBackground} />\\n        <div className=\\\"relative shrink-0 size-[87px]\\\" data-node-id=\\\"121:249\\\" data-name=\\\"Container\\\" />\\n      </div>\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-251": {
+    "nodeId": "121-251",
+    "figmaNodeId": "121:251",
+    "name": "Symbol",
+    "primaryAsset": "assets/figma_assets/figma_121_251.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_251.svg",
+      "assets/figma_assets/figma_121_251_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSymbol = \\\"http://localhost:3845/assets/2ee682424474e450842a2fb5e89043311345d43f.svg\\\";\\n\\nexport default function Symbol() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:251\\\" data-name=\\\"Symbol\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSymbol} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-252": {
+    "nodeId": "121-252",
+    "figmaNodeId": "121:252",
+    "name": "Symbol",
+    "primaryAsset": "assets/figma_assets/figma_121_252.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_252.svg",
+      "assets/figma_assets/figma_121_252_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSymbol = \\\"http://localhost:3845/assets/4d47ae164b2f2927b569322f7fe5127bb99e238a.svg\\\";\\n\\nexport default function Symbol() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:252\\\" data-name=\\\"Symbol\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSymbol} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-250": {
+    "nodeId": "121-250",
+    "figmaNodeId": "121:250",
+    "name": "Symbol",
+    "primaryAsset": "assets/figma_assets/figma_121_250.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_250.svg",
+      "assets/figma_assets/figma_121_250_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSymbol = \\\"http://localhost:3845/assets/6d60cedabf5f42b221732c3a065aec615100cc20.svg\\\";\\n\\nexport default function Symbol() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:250\\\" data-name=\\\"Symbol\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSymbol} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-253": {
+    "nodeId": "121-253",
+    "figmaNodeId": "121:253",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_253.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_253.svg",
+      "assets/figma_assets/figma_121_253_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/be060fde95c616c4763b6aeaab8cd1ee53d1b217.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:253\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-255": {
+    "nodeId": "121-255",
+    "figmaNodeId": "121:255",
+    "name": "Container",
+    "primaryAsset": "assets/figma_assets/figma_121_255.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_255.svg",
+      "assets/figma_assets/figma_121_255_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgContainer = \\\"http://localhost:3845/assets/70c5bd4076e9d147dbd98f938125d111b935bedd.svg\\\";\\n\\nexport default function Container() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:255\\\" data-name=\\\"Container\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgContainer} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-259": {
+    "nodeId": "121-259",
+    "figmaNodeId": "121:259",
+    "name": "SVG",
+    "primaryAsset": "assets/figma_assets/figma_121_259.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_259.svg",
+      "assets/figma_assets/figma_121_259_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg = \\\"http://localhost:3845/assets/690056a5e463a269cbaf63326da4ae32ba5b6642.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:259\\\" data-name=\\\"SVG\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  },
+  "121-257": {
+    "nodeId": "121-257",
+    "figmaNodeId": "121:257",
+    "name": "SVG",
+    "primaryAsset": "assets/figma_assets/figma_121_257.svg",
+    "assets": [
+      "assets/figma_assets/figma_121_257.svg",
+      "assets/figma_assets/figma_121_257_2.svg"
+    ],
+    "codeSnippet": "event: message\ndata: {\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"const imgSvg = \\\"http://localhost:3845/assets/74374d221280ec7aca0b8d3bee6276dc869cbd68.svg\\\";\\n\\nexport default function Svg() {\\n  return (\\n    <div className=\\\"relative size-full\\\" data-node-id=\\\"121:257\\\" data-name=\\\"SVG\\\">\\n      <img alt=\\\"\\\" className=\\\"absolute block inset-0 max-w-none size-full\\\" src={imgSvg} />\\n    </div>\\n  );\\n}\"},{\"type\":\"text\",\"text\":\""
+  }
+}

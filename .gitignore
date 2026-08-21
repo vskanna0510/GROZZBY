@@ -1,0 +1,7 @@
+mobile/build/
+mobile/.dart_tool/
+backend/node_modules/
+backend/.env
+_animation_frames/
+*.log
+.DS_Store
